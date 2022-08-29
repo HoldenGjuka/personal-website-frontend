@@ -1,7 +1,8 @@
 h1 {
-  background-color: lightblue;
-  width: 800px;
-  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid blueviolet;
   padding: 40px;
   font-size: xx-large;
 }
@@ -19,4 +20,11 @@ h1 {
 
 .flex-child-element:first-child {
   margin-right: 20px;
+}
+
+.footer {
+  border: 2px blueviolet;
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
 }

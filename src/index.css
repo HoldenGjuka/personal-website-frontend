@@ -5,22 +5,18 @@ h1 {
   padding: 40px;
   font-size: xx-large;
 }
-.blog-box {
-  background-color: darkblue;
-  width: 500px;
-  height: 600px;
-  font-size: x-large;
+
+.flex-parent-element {
+  display: flex;
+  width: 100%;
 }
 
-.blog-box {
-  display: inline-block;
+.flex-child-element {
+  flex: 1;
+  border: 2px solid blueviolet;
+  margin: 10px;
 }
 
-.attributes-box {
-  display: inline-block;
-  background-color: grey;
-}
-
-dt {
-  font-size: large;
+.flex-child-element:first-child {
+  margin-right: 20px;
 }

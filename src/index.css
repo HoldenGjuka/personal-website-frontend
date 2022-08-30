@@ -7,6 +7,17 @@ h1 {
   font-size: xx-large;
 }
 
+a {
+  display:inline-block;
+  height:100px;
+}
+
+a img {
+  padding: 30px;
+  height:36px;
+  width:36px;
+}
+
 .flex-parent-element {
   display: flex;
   width: 100%;

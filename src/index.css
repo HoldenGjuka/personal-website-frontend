@@ -18,6 +18,22 @@ a img {
   width:36px;
 }
 
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group a button {
+  margin-left: 20px;
+  border: 2px solid blueviolet;
+  font-size: 20px;
+}
+
+.button-group button:hover {
+  background-color: aqua;
+}
+
 .flex-parent-element {
   display: flex;
   width: 100%;

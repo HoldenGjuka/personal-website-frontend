@@ -65,6 +65,16 @@ function Child() {
 }
 
 
+class BlogSpace extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+    
+  }
+}
+
 //creates HTML for a single BlogPost component
 class BlogPost extends React.Component {
   constructor(props) {

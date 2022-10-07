@@ -65,8 +65,7 @@ function Child() {
 }
 
 
-
-//creates HTML for a single BlogPost
+//creates HTML for a single BlogPost component
 class BlogPost extends React.Component {
   constructor(props) {
     super(props)

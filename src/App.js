@@ -50,10 +50,7 @@ function Child() {
   return(
     <div className="flex-child-element">
       <div className="blog-space-header"><strong>Blog Space</strong></div>
-      <div className="blog-child">
-        <h2>whatever title</h2>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
+      <BlogPost />
         
 
       <div className="flex-child-element">
@@ -67,13 +64,15 @@ function Child() {
   )
 }
 
-//display and fetch class
-class Atom extends React.Component {
+
+
+//creates HTML for a single BlogPost
+class BlogPost extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      magicWord: "asdf",
-      forbiddenWord: null
+      title: "not_loaded",
+      body: "not_loaded"
     }
     this.getDataFetch()
   }
@@ -93,9 +92,16 @@ class Atom extends React.Component {
   }
 
   render(){
-    return <h2>
-    {this.state.title}
-    </h2>
+    return (
+      <div class="blog-child">
+        <h2>
+          {this.state.title}
+        </h2>
+        <p>
+          {this.state.body}
+        </p>
+      </div>
+    )
   }
 }
 

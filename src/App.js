@@ -58,8 +58,6 @@ class Child extends React.Component {
       <div className="flex-child-element">
         <div className="blog-space-header"><strong>Blog Space</strong></div>
         <BlogSpace />
-          
-  
         <div className="flex-child-element">
           <div className="skills-header">Skills & Attributes</div>
           <dl>
@@ -98,7 +96,7 @@ class BlogSpace extends React.Component {
 
   render(){
     return (
-      <div class="blog-child">
+      <div className="blog-child">
         <h2>
           {this.state.blogs[0].title}
         </h2>

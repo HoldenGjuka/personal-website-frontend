@@ -13,8 +13,38 @@ export function Header () {
   )
 }
 
+class Resume extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      resume: ""
+    }
+    this.getResume()
+  }
+  
+  getResume = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/home/resume/')
+      const output = await response.text()
+      const parsed_output = JSON.parse(output)
+      this.setState({
+        resume: parsed_output,
+      })
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  render() {
+    return (
+      this.state.resume
+    )
+  }
+}
+
 export function Navbar () {
   return ( 
+    
     <div className="button-group">  
       <a href="./HOLDEN GJUKA CS Resume August.pdf">  
         <button>Resume</button>  
@@ -28,6 +58,7 @@ export function Navbar () {
       <a href="http://github.com/HoldenGjuka">  
         <button>Upcoming Projects</button>  
       </a>  
+      <div><Resume /></div>
     </div>
   )
 }
@@ -63,10 +94,10 @@ class BlogSpace extends React.Component {
     this.state = {
       blogs: [""]
     }
-    this.getDataFetch()
+    this.getBlogs()
   }
     
-  getDataFetch = async () => {
+  getBlogs = async () => {
     try {
       const response = await fetch('http://127.0.0.1:8000/home/')
       const output = await response.text()

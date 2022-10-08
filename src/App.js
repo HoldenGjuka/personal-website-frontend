@@ -50,7 +50,8 @@ function Child() {
   return(
     <div className="flex-child-element">
       <div className="blog-space-header"><strong>Blog Space</strong></div>
-      <BlogPost />
+      
+      <BlogSpace />
         
 
       <div className="flex-child-element">
@@ -64,26 +65,15 @@ function Child() {
   )
 }
 
-
 class BlogSpace extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      blogs: []
     }
-    
-  }
-}
 
-//creates HTML for a single BlogPost component
-class BlogPost extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      title: "not_loaded",
-      body: "not_loaded"
-    }
     this.getDataFetch()
+    console.log(this.blogs)
   }
 
   getDataFetch = async () => {
@@ -92,26 +82,40 @@ class BlogPost extends React.Component {
       const output = await response.text()
       const parsed_output = JSON.parse(output)
       this.setState({
-        title: parsed_output.title,
-        body: parsed_output.body
+        blogs: parsed_output,
       })
     } catch (error) {
       console.error(error)
     }
   }
 
+  createBlogPosts(title, body){
+    return(
+      <BlogPost title={title} body={body} />
+    )
+  }
+
   render(){
     return (
-      <div class="blog-child">
-        <h2>
-          {this.state.title}
-        </h2>
-        <p>
-          {this.state.body}
-        </p>
+      <div className="blog-parent">
+        {this.createBlogPosts()}
       </div>
     )
   }
+}
+
+//creates HTML for a single BlogPost component
+function BlogPost(props) {
+  return(
+    <div className="blog-child">
+      <h2>
+        {props.title}
+      </h2>
+      <p>
+        {props.body}
+      </p>
+    </div>
+  )
 }
 
 //superfunction, refactor later so that the subfunctions are shown in index.js

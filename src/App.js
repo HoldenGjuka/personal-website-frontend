@@ -112,27 +112,6 @@ class BlogSpace extends React.Component {
 }
 
 //creates HTML for a single BlogPost component
-class BlogPost extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      title: "not_loaded",
-      body: "not_loaded"
-    }
-    this.getDataFetch()
-    console.log(this.blogs)
-  }
-
-  render(){
-    return (
-      <div className="blog-parent">
-        {this.createBlogPosts()}
-      </div>
-    )
-  }
-}
-
-//creates HTML for a single BlogPost component
 function BlogPost(props) {
   return(
     <div className="blog-child">

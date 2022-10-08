@@ -71,7 +71,7 @@ class Child extends React.Component {
   
 }
 
-
+//creates the blog feature of the webpage
 class BlogSpace extends React.Component {
   constructor(props) {
     super(props)
@@ -96,17 +96,11 @@ class BlogSpace extends React.Component {
 
   render(){
     return (
-      <div className="blog-child">
-        <h2>
-          {this.state.blogs[0].title}
-        </h2>
-        <p>
-          {this.state.blogs[0].body}
-        </p>
-      </div>
+      this.state.blogs.map(function(post){
+        return <BlogPost title={post.title} body={post.body} />
+      })
     )
   }
-  
 }
 
 //creates HTML for a single BlogPost component

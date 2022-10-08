@@ -38,27 +38,13 @@ export function Footer() {
   )
 }
 
-// function Parent() {
-//   return(
-//     <div className="flex-parent-element">
-//       <Child />
-//     </div>
-//   )
-// }
-
-class Child extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-    }
-  }
-
-  render(){
-    return(
+function Parent() {
+  return(
+    <div className="flex-parent-element">
       <div className="flex-child-element">
         <div className="blog-space-header"><strong>Blog Space</strong></div>
         <BlogSpace />
-        <div className="flex-child-element">
+      <div className="flex-child-element">
           <div className="skills-header">Skills & Attributes</div>
           <dl>
             <dt>Full Stack Development</dt>
@@ -66,9 +52,8 @@ class Child extends React.Component {
           </dl>
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  )
 }
 
 //creates the blog feature of the webpage
@@ -123,7 +108,7 @@ export default function Geck () {
     <div className="body">
       <Header />
       <Navbar />
-      <Child />
+      <Parent />
       <Footer />
     </div>
   )

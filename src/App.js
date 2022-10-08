@@ -38,44 +38,51 @@ export function Footer() {
   )
 }
 
-function Parent() {
-  return(
-    <div className="flex-parent-element">
-      <Child />
-    </div>
-  )
-}
+// function Parent() {
+//   return(
+//     <div className="flex-parent-element">
+//       <Child />
+//     </div>
+//   )
+// }
 
-function Child() {
-  return(
-    <div className="flex-child-element">
-      <div className="blog-space-header"><strong>Blog Space</strong></div>
-      
-      <BlogSpace />
-        
+class Child extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+    }
+  }
 
+  render(){
+    return(
       <div className="flex-child-element">
-        <div className="skills-header">Skills & Attributes</div>
-        <dl>
-          <dt>Full Stack Development</dt>
-          <dd>JavaScript, TypeScript, Java, Python</dd>
-        </dl>
+        <div className="blog-space-header"><strong>Blog Space</strong></div>
+        <BlogSpace />
+          
+  
+        <div className="flex-child-element">
+          <div className="skills-header">Skills & Attributes</div>
+          <dl>
+            <dt>Full Stack Development</dt>
+            <dd>JavaScript, TypeScript, Java, Python</dd>
+          </dl>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
+  
 }
+
 
 class BlogSpace extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      blogs: []
+      blogs: [""]
     }
-
     this.getDataFetch()
-    console.log(this.blogs)
   }
-
+    
   getDataFetch = async () => {
     try {
       const response = await fetch('http://127.0.0.1:8000/home/')
@@ -89,10 +96,31 @@ class BlogSpace extends React.Component {
     }
   }
 
-  createBlogPosts(title, body){
-    return(
-      <BlogPost title={title} body={body} />
+  render(){
+    return (
+      <div class="blog-child">
+        <h2>
+          {this.state.blogs[0].title}
+        </h2>
+        <p>
+          {this.state.blogs[0].body}
+        </p>
+      </div>
     )
+  }
+  
+}
+
+//creates HTML for a single BlogPost component
+class BlogPost extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: "not_loaded",
+      body: "not_loaded"
+    }
+    this.getDataFetch()
+    console.log(this.blogs)
   }
 
   render(){
@@ -124,7 +152,7 @@ export default function Geck () {
     <div className="body">
       <Header />
       <Navbar />
-      <Parent />
+      <Child />
       <Footer />
     </div>
   )

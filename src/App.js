@@ -12,7 +12,7 @@ class Header extends React.Component {
   
   getResume = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/home/resume/')
+      const response = await fetch('http://127.0.0.1:8000/home/github_logo/')
       const output = await response.text()
       this.setState({
         resume_b64: output,

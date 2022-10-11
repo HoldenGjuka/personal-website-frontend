@@ -5,6 +5,40 @@ class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      logo_b64: ""
+    }
+    this.getLogo()
+  }
+  
+  getLogo = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/home/github_logo/')
+      const output = await response.text()
+      this.setState({
+        logo_b64: output,
+      })
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  render() {
+    return (
+      <div className="flex-header-parent">
+        <h1>Welcome to my website!
+          <a className='Github-link' id='github_logo' href='http://github.com/HoldenGjuka'>
+            <img src={ "data:image/png;base64," + this.state.logo_b64 } alt="GitHub logo"></img>
+          </a>
+        </h1>
+      </div>
+    )
+  }
+}
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
       resume_b64: ""
     }
     this.getResume()
@@ -12,7 +46,7 @@ class Header extends React.Component {
   
   getResume = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/home/github_logo/')
+      const response = await fetch('http://127.0.0.1:8000/home/resume/')
       const output = await response.text()
       this.setState({
         resume_b64: output,
@@ -22,40 +56,28 @@ class Header extends React.Component {
     }
   }
 
-  convertToPDF() {
-    return atob(this.state.resume_b64)
-  }
-
   render() {
     return (
-      <div className="flex-header-parent">
-        <h1>Welcome to my website!
-          <a className='Github-link' id='github_logo' href='http://github.com/HoldenGjuka'>
-            <img src={ "data:image/png;base64," + this.state.resume_b64 } alt="GitHub logo"></img>
-          </a>
-        </h1>
+      <div className="button-group">  
+        <a download='Holden_Gjuka_Resume.png' 
+        href={ "data:application/png;base64," + this.state.resume_b64 } 
+        type='application/png'> 
+          <button>Resume</button>  
+        </a>  
+        <a download='Holden_Gjuka_Resume.png' 
+          href={ "data:application/png;base64," + this.state.resume_b64 } 
+          type='application/png'>  
+          <button>About Me</button>  
+        </a>  
+        <a href="mailto: holdengjuka@gmail.com">  
+          <button>Email Me</button>  
+        </a>  
+        <a href="http://github.com/HoldenGjuka">  
+          <button>Upcoming Projects</button>  
+        </a>
       </div>
     )
   }
-}
-
-export function Navbar () {
-  return ( 
-    <div className="button-group">  
-      <a href="./HOLDEN GJUKA CS Resume August.pdf">  
-        <button>Resume</button>  
-      </a>  
-      <a href="./HOLDEN GJUKA CS Resume August.pdf">  
-        <button>About Me</button>  
-      </a>  
-      <a href="mailto: holdengjuka@gmail.com">  
-        <button>Email Me</button>  
-      </a>  
-      <a href="http://github.com/HoldenGjuka">  
-        <button>Upcoming Projects</button>  
-      </a>
-    </div>
-  )
 }
 
 export function Footer() {

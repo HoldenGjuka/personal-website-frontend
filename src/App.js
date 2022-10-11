@@ -1,19 +1,7 @@
 import React from 'react'
-import githubLogo from './images/GitHub_Logo.png'
 
-export function Header () {
-  const githubURL = 'http://github.com/HoldenGjuka'
-  return(
-    <div className="flex-header-parent">
-      <h1>Welcome to my website!
-        <a className='Github-link' id='github_logo' href={githubURL}></a>
-          <img src={githubLogo} alt="GitHub logo"></img>
-      </h1>
-    </div>
-  )
-}
 
-class Resume extends React.Component {
+class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -40,8 +28,12 @@ class Resume extends React.Component {
 
   render() {
     return (
-      <div>
-        <img src={ "data:image/png;base64," + this.state.resume_b64 } alt="github_logo"></img>
+      <div className="flex-header-parent">
+        <h1>Welcome to my website!
+          <a className='Github-link' id='github_logo' href='http://github.com/HoldenGjuka'>
+            <img src={ "data:image/png;base64," + this.state.resume_b64 } alt="GitHub logo"></img>
+          </a>
+        </h1>
       </div>
     )
   }
@@ -61,8 +53,7 @@ export function Navbar () {
       </a>  
       <a href="http://github.com/HoldenGjuka">  
         <button>Upcoming Projects</button>  
-      </a>  
-      <Resume />
+      </a>
     </div>
   )
 }

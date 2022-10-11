@@ -92,13 +92,13 @@ function Parent() {
       <div className="flex-child-element">
         <div className="blog-space-header"><strong>Blog Space</strong></div>
         <BlogSpace />
+      </div>
       <div className="flex-child-element">
           <div className="skills-header">Skills & Attributes</div>
           <dl>
             <dt>Full Stack Development</dt>
             <dd>JavaScript, TypeScript, Java, Python</dd>
           </dl>
-        </div>
       </div>
     </div>
   )

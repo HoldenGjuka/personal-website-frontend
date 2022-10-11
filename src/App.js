@@ -17,7 +17,7 @@ class Resume extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      resume: ""
+      resume_b64: ""
     }
     this.getResume()
   }
@@ -26,25 +26,29 @@ class Resume extends React.Component {
     try {
       const response = await fetch('http://127.0.0.1:8000/home/resume/')
       const output = await response.text()
-      const parsed_output = JSON.parse(output)
       this.setState({
-        resume: parsed_output,
+        resume_b64: output,
       })
     } catch (error) {
       console.error(error)
     }
   }
 
+  convertToPDF() {
+    return atob(this.state.resume_b64)
+  }
+
   render() {
     return (
-      this.state.resume
+      <div>
+        <img src={ "data:image/png;base64," + this.state.resume_b64 } alt="github_logo"></img>
+      </div>
     )
   }
 }
 
 export function Navbar () {
   return ( 
-    
     <div className="button-group">  
       <a href="./HOLDEN GJUKA CS Resume August.pdf">  
         <button>Resume</button>  
@@ -58,7 +62,7 @@ export function Navbar () {
       <a href="http://github.com/HoldenGjuka">  
         <button>Upcoming Projects</button>  
       </a>  
-      <div><Resume /></div>
+      <Resume />
     </div>
   )
 }

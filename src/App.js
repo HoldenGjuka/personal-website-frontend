@@ -1,14 +1,20 @@
 import React from 'react'
 
-import { Button, Container } from '@mui/material'
+import { Container } from '@mui/material'
 import { ThemeProvider } from '@mui/system'
+
 import theme from './styles/theme/index.js'
+import Appbar from './components/appbar'
+import Header from './components/header'
 
 export default function Geck () {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Button variant='contained'>hello</Button>
+        <Header />
+      </Container>
+      <Container>
+        <Appbar />
       </Container>
     </ThemeProvider>
   )

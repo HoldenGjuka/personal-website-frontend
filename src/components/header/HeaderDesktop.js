@@ -1,9 +1,9 @@
-import { HeaderContainer } from "../../styles/header"
+import { HeaderContainer, HeaderText } from "../../styles/header"
 
 export default function HeaderDesktop({matches}){
   return (
     <HeaderContainer>
-      <div>Text</div>
+      <HeaderText>Holden's Website</HeaderText>
     </HeaderContainer>
   )
 }

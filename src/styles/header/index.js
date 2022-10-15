@@ -6,12 +6,13 @@ import { Typography } from '@mui/material'
 export const HeaderContainer = styled(Box)(() => ({
   display: 'flex',
   marginTop: 4,
+  marginBottom:4,
   justifyContent: 'center',
   alignitems: 'center',
-  padding: '2px 8px'
 }))
 
 export const HeaderText = styled(Typography)(() => ({
   padding: '10px',
   flexGrow: 1,
+  fontSize: '8em'
 }))

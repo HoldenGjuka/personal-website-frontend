@@ -1,29 +1,25 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
-import { Typography, Paper } from '@mui/material'
+import { Typography } from '@mui/material'
 
 
 //container
 export const BodyContainer = styled(Box)(() => ({
   display: 'flex',
   flexDirection:'row',
-  marginTop: 4,
+  marginTop: 14,
   justifyContent: 'center',
   alignitems: 'center',
 }))
 
 //container
-export const BlogSpaceContainer = styled(Paper)(() => ({
-
+export const BlogSpaceContainer = styled(Box)(() => ({
   display: 'flex',
-  flexDirection: 'row',
-  flexGrow: 1.5,
-  marginTop: 10,
+  
 }))
 
 //Blog Space Header
 export const BlogHeader = styled(Typography)(() => ({
-  flexGrow: 1,
   fontSize: '5em',
 }))
 
@@ -41,12 +37,6 @@ export const BlogBody = styled(Typography)(() => ({
 //container
 export const SkillsContainer = styled(Box)(() => ({
   display: 'flex',
-  flexDirection: 'row',
-  flexGrow: .5,
-  marginTop: 4,
-  justifyContent: 'flex-start',
-  alignitems: 'flex-start',
-  padding: '2px 8px'
 }))
 
 //formatting for skills text

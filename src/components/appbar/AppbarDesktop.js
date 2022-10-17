@@ -1,4 +1,4 @@
-import { ListItemText } from "@mui/material";
+import { Button } from "@mui/material";
 import { AppbarContainer, MyList } from "../../styles/appbar";
 
 
@@ -6,10 +6,10 @@ export default function AppbarDesktop({matches}) {
   return (
     <AppbarContainer>
       <MyList type='row'>
-        <ListItemText primary="Resume"></ListItemText>
-        <ListItemText primary="About Me"></ListItemText>
-        <ListItemText primary="Email Me"></ListItemText>
-        <ListItemText primary="Upcoming Projects"></ListItemText>
+        <Button>Resume</Button>
+        <Button>About Me</Button>
+        <Button>Email Me</Button>
+        <Button>Upcoming ProjectsS</Button>
       </MyList>
     </AppbarContainer>
   )

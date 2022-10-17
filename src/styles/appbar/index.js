@@ -19,11 +19,9 @@ export const AppbarHeader = styled(Typography)(() => ({
   fontSize: '4em',
 }))
 
-//list for header
+//list for header buttons
 export const MyList = styled(List)(({ type }) => ({
-
   display: type === 'row' ? 'flex' : 'block',
-  flexGrow: 3,
   justifyContent: 'center',
-  alignitems: 'center'
+  alignitems: 'space-evenly'
 }))

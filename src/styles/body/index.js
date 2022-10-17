@@ -26,7 +26,8 @@ export const BlogHeader = styled(Typography)(() => ({
 
 export const BlogPaper = styled(Paper)(() => ({
   elevation: 10,
-  paddingBottom: 3,
+  borderRadius: 4,
+  paddingBottom: 15,
   variant: 'outlined',
   backgroundColor: '#C9701632',
 }))
@@ -54,5 +55,5 @@ export const SkillsHeader = styled(Typography)(() => ({
 
 //formatting for skills text
 export const SkillsBody = styled(Typography)(() => ({
-
+  fontSize: '1.3em'
 }))

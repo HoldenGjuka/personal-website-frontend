@@ -3,6 +3,7 @@ import {BodyContainer, BlogSpaceContainer, SkillsContainer,
         SkillsBody } 
         from "../../styles/body"
 import { Box, Paper, Stack } from '@mui/material'
+import { browserWidth } from "../../styles/theme"
 
 export default function BodyDesktop({ matches }) {
   return (
@@ -11,7 +12,7 @@ export default function BodyDesktop({ matches }) {
       <BlogSpaceContainer>
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
-          <Box sx={{height: 500, overflow: 'auto'}}>
+          <Box sx={{height: 500, overflow: 'auto', minWidth: browserWidth * .7}}>
             <Paper elevation={10}>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

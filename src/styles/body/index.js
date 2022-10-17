@@ -19,18 +19,12 @@ export const BlogSpaceContainer = styled(Paper)(() => ({
   flexDirection: 'row',
   flexGrow: 1.5,
   marginTop: 10,
-  justifyContent: 'flex-start',
-  alignitems: 'flex-start',
 }))
 
 //Blog Space Header
 export const BlogHeader = styled(Typography)(() => ({
   flexGrow: 1,
   fontSize: '5em',
-}))
-
-export const BlogPostsBox = styled(Box)(() => ({
-
 }))
 
 //blog title typography

@@ -13,7 +13,7 @@ export default function BodyDesktop({ matches }) {
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
           <Box sx={{height: 500, overflow: 'auto', minWidth: browserWidth * .7}}>
-            <Paper elevation={10}>
+            <Paper sx={{elevation: 10,}}>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -22,7 +22,7 @@ export default function BodyDesktop({ matches }) {
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
             </Paper>
-            <Paper elevation={10}>
+            <Paper sx={{elevation: 10,}}>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -31,7 +31,7 @@ export default function BodyDesktop({ matches }) {
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
             </Paper>
-            <Paper elevation={10}>
+            <Paper sx={{elevation: 10,}}>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -40,7 +40,7 @@ export default function BodyDesktop({ matches }) {
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
             </Paper>
-            <Paper elevation={10}>
+            <Paper sx={{elevation: 10,}}>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 

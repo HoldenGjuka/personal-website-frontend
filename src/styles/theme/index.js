@@ -13,4 +13,6 @@ const darkTheme = createTheme({
   }
 })
 
+export const browserHeight = 600
+
 export default darkTheme

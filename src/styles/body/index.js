@@ -1,11 +1,10 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
-import { Typography, Stack } from '@mui/material'
+import { Typography, Paper } from '@mui/material'
 
 
 //container
 export const BodyContainer = styled(Box)(() => ({
-
   display: 'flex',
   flexDirection:'row',
   marginTop: 4,
@@ -14,7 +13,7 @@ export const BodyContainer = styled(Box)(() => ({
 }))
 
 //container
-export const BlogSpaceContainer = styled(Box)(() => ({
+export const BlogSpaceContainer = styled(Paper)(() => ({
 
   display: 'flex',
   flexDirection: 'row',
@@ -30,7 +29,7 @@ export const BlogHeader = styled(Typography)(() => ({
   fontSize: '5em',
 }))
 
-export const BlogPostStack = styled(Stack)(() => ({
+export const BlogPostsBox = styled(Box)(() => ({
 
 }))
 

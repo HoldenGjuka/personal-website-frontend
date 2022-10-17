@@ -1,24 +1,55 @@
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
-        BlogHeader, BlogTitle, BlogBody, BlogPostStack, SkillsHeader,
+        BlogHeader, BlogTitle, BlogBody, SkillsHeader,
         SkillsBody } 
         from "../../styles/body"
-import { Stack } from '@mui/material'
+import { Box, Paper, Stack } from '@mui/material'
 
 export default function BodyDesktop({ matches }) {
   return (
     <BodyContainer>
       
       <BlogSpaceContainer>
-        <BlogPostStack>
+        <Stack>
           <BlogHeader>Blog Space</BlogHeader>
-          <BlogTitle>title</BlogTitle>
-          <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-        </BlogPostStack>
+          <Box sx={{height: 500, overflow: 'auto'}}>
+            <Paper elevation='10'>
+              <BlogTitle>title</BlogTitle>
+              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
+            </Paper>
+            <Paper elevation='10'>
+              <BlogTitle>title</BlogTitle>
+              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
+            </Paper>
+            <Paper elevation='10'>
+              <BlogTitle>title</BlogTitle>
+              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
+            </Paper>
+            <Paper elevation='10'>
+              <BlogTitle>title</BlogTitle>
+              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
+            </Paper>
+          </Box>
+        </Stack>
       </BlogSpaceContainer>
       
       <SkillsContainer>

@@ -9,7 +9,7 @@ export default function AppbarDesktop({matches}) {
         <Button>Resume</Button>
         <Button>About Me</Button>
         <Button>Email Me</Button>
-        <Button>Upcoming ProjectsS</Button>
+        <Button>Upcoming Projects</Button>
       </MyList>
     </AppbarContainer>
   )

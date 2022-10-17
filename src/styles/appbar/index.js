@@ -7,7 +7,7 @@ export const AppbarContainer = styled(Box)(() => ({
 
   display: 'flex',
   marginTop: 4,
-  justifyContent: 'center',
+  justifyContent: 'space-evenly',
   alignitems: 'center',
   padding: '2px 8px'
 }))
@@ -22,6 +22,6 @@ export const AppbarHeader = styled(Typography)(() => ({
 //list for header buttons
 export const MyList = styled(List)(({ type }) => ({
   display: type === 'row' ? 'flex' : 'block',
-  justifyContent: 'center',
-  alignitems: 'space-evenly'
+  justifyContent: 'space-evenly',
+  alignitems: 'center'
 }))

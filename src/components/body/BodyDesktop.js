@@ -1,8 +1,8 @@
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
-        BlogHeader, BlogTitle, BlogBody, SkillsHeader,
-        SkillsBody } 
+        BlogPaper, BlogHeader, BlogTitle, BlogBody, 
+        SkillsHeader, SkillsBody } 
         from "../../styles/body"
-import { Box, Paper, Stack } from '@mui/material'
+import { Box, Stack } from '@mui/material'
 import { browserWidth } from "../../styles/theme"
 
 export default function BodyDesktop({ matches }) {
@@ -13,7 +13,7 @@ export default function BodyDesktop({ matches }) {
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
           <Box sx={{height: 500, overflow: 'auto', minWidth: browserWidth * .7}}>
-            <Paper sx={{elevation: 10, paddingBottom: 3}}>
+            <BlogPaper>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -21,8 +21,8 @@ export default function BodyDesktop({ matches }) {
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </Paper>
-            <Paper sx={{elevation: 10, paddingBottom: 3}}>
+            </BlogPaper>
+            <BlogPaper>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -30,8 +30,8 @@ export default function BodyDesktop({ matches }) {
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </Paper>
-            <Paper sx={{elevation: 10, paddingBottom: 3}}>
+            </BlogPaper>
+            <BlogPaper>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -39,8 +39,8 @@ export default function BodyDesktop({ matches }) {
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </Paper>
-            <Paper sx={{elevation: 10, paddingBottom: 3}}>
+            </BlogPaper>
+            <BlogPaper>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -48,7 +48,7 @@ export default function BodyDesktop({ matches }) {
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </Paper>
+            </BlogPaper>
           </Box>
         </Stack>
       </BlogSpaceContainer>

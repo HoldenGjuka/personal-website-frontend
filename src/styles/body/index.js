@@ -1,11 +1,12 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
-import { Typography } from '@mui/material'
+import { Paper, Typography } from '@mui/material'
 
 
 //container
 export const BodyContainer = styled(Box)(() => ({
   display: 'flex',
+  gap: '2%',
   flexDirection:'row',
   marginTop: 14,
   justifyContent: 'center',
@@ -21,6 +22,13 @@ export const BlogSpaceContainer = styled(Box)(() => ({
 //Blog Space Header
 export const BlogHeader = styled(Typography)(() => ({
   fontSize: '5em',
+}))
+
+export const BlogPaper = styled(Paper)(() => ({
+  elevation: 10,
+  paddingBottom: 3,
+  variant: 'outlined',
+  backgroundColor: '#C9701632',
 }))
 
 //blog title typography
@@ -41,7 +49,7 @@ export const SkillsContainer = styled(Box)(() => ({
 
 //formatting for skills text
 export const SkillsHeader = styled(Typography)(() => ({
-
+  fontSize: '2em',
 }))
 
 //formatting for skills text

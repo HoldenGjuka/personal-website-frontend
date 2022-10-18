@@ -35,11 +35,13 @@ export const BlogPaper = styled(Paper)(() => ({
 //blog title typography
 export const BlogTitle = styled(Typography)(() => ({
   fontSize: '2em',
+  paddingLeft: 15,
 }))
 
 //blog title typography
 export const BlogBody = styled(Typography)(() => ({
   fontSize: '1em',
+  paddingLeft: 5,
 }))
 
 

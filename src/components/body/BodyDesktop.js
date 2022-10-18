@@ -55,10 +55,17 @@ export default function BodyDesktop({ matches }) {
       
       <SkillsContainer>
         <Stack>
-          <SkillsHeader>Skills and Courses</SkillsHeader>
-          <SkillsBody>JavaScript, TypeScript, Java, Python</SkillsBody>
+          <SkillsHeader>Skills and Knowledge</SkillsHeader>
+
           <SkillsBody>Full Stack Development</SkillsBody>
-          <SkillsBody>React, Django, GitHub, VS Code</SkillsBody>
+          <SkillsBody>React</SkillsBody>
+          <SkillsBody>Django</SkillsBody>
+          <SkillsBody>GitHub</SkillsBody>
+          <SkillsBody>VS Code</SkillsBody>
+          <SkillsBody>JavaScript</SkillsBody>
+          <SkillsBody>TypeScript</SkillsBody>
+          <SkillsBody>Java</SkillsBody>
+          <SkillsBody>Python</SkillsBody>
         </Stack>
       </SkillsContainer>
 

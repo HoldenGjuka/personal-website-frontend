@@ -3,16 +3,20 @@ import { Box } from '@mui/system'
 
 import Image from '../../images/backgrounds/blue-texture.jpeg'
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
+const customTheme = createTheme({
   components: {
-    MuiButton: {
-      defaultProps: {
-        disableRipple: true,
-      }
-    }
+     MuiButton: {
+        variants: [
+          {
+            props: { variant: 'bold' },
+            style: {
+              fontWeight: 'bold',
+              fontSize: 'large',
+              color: 'black'
+            }
+          }
+        ]  
+      }   
   }
 })
 
@@ -50,4 +54,4 @@ export const BackgroundImage = styled(Box)(() => ({
   width: browserWidth,
 }))
 
-export default darkTheme
+export default customTheme

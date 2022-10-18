@@ -47,10 +47,10 @@ export const BlogBody = styled(Typography)(() => ({
 
 
 //container
-export const SkillsContainer = styled(Box)(() => ({
+export const SkillsContainer = styled(Box, Colors)(() => ({
   display: 'flex',
   flex: '1 0 auto',
-  backgroundColor: '#C9701632'
+  backgroundColor: Colors.paperBrown,
 }))
 
 //formatting for skills text

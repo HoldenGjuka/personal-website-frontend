@@ -68,7 +68,7 @@ export default function BodyDesktop({ matches }) {
       <SkillsContainer>
         <Stack>
           <SkillsHeader>Skills and Knowledge</SkillsHeader>
-
+          
           <SkillsBody>Full Stack Development</SkillsBody>
           <SkillsBody>React</SkillsBody>
           <SkillsBody>Django</SkillsBody>

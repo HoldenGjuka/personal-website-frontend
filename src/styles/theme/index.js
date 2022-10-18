@@ -44,7 +44,8 @@ export const browserWidth = getWidth()
 
 //background image
 export const BackgroundImage = styled(Box)(() => ({
-  backgroundImage: `url(${Image})`, objectFit: 'cover',
+  backgroundImage: `url(${Image})`, 
+  objectFit: 'fill',
   height: browserHeight,
   width: browserWidth,
 }))

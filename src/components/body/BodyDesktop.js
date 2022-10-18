@@ -13,7 +13,7 @@ export default function BodyDesktop({ matches }) {
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
           <Box sx={{height: 500, overflow: 'auto', minWidth: browserWidth * .7}}>
-            <BlogPaper color="paperBrown">
+            <BlogPaper>
               <BlogTitle>title</BlogTitle>
               <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 

@@ -3,7 +3,7 @@ import { Box } from '@mui/system'
 
 import Image from '../../images/backgrounds/blue-texture.jpeg'
 
-const Colors = {
+export const Colors = {
   paperBrown: '#C9701632',
   buttonText: 'black',
 }

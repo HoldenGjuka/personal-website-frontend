@@ -1,6 +1,7 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Paper, Typography } from '@mui/material'
+import { Colors } from '../theme/index.js'
 
 
 //container
@@ -24,12 +25,12 @@ export const BlogHeader = styled(Typography)(() => ({
   fontSize: '5em',
 }))
 
-export const BlogPaper = styled(Paper)(() => ({
+export const BlogPaper = styled(Paper, Colors)(() => ({
   elevation: 10,
   borderRadius: 4,
   paddingBottom: 15,
   variant: 'outlined',
-  backgroundColor: '#C9701632',
+  backgroundColor: Colors.paperBrown,
 }))
 
 //blog title typography

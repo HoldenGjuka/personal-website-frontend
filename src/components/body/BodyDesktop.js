@@ -8,7 +8,7 @@ import { Box, Stack } from '@mui/material'
 
 import { browserWidth } from "../../styles/theme"
 
-//creates the blog feature of the webpage
+//Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
 class Blogs extends React.Component {
   constructor(props) {
     super(props)
@@ -50,6 +50,8 @@ function BlogPost(props) {
   )
 }
 
+
+//Parent Function rendering the entirety of the Body Component
 export default function BodyDesktop({ matches }) {
   return (
     <BodyContainer>

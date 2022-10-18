@@ -1,4 +1,7 @@
-import { createTheme } from '@mui/material/styles'
+import { createTheme, styled } from '@mui/material/styles'
+import { Box } from '@mui/system'
+
+import Image from '../../images/backgrounds/wood-texture.jpeg'
 
 const darkTheme = createTheme({
   palette: {
@@ -12,7 +15,6 @@ const darkTheme = createTheme({
     }
   }
 })
-
 
 function getWidth() {
   return Math.max(
@@ -37,5 +39,14 @@ function getHeight() {
 export const browserHeight = getHeight()
 
 export const browserWidth = getWidth()
+
+
+
+//background image
+export const BackgroundImage = styled(Box)(() => ({
+  backgroundImage: `url(${Image})`, objectFit: 'cover',
+  height: browserHeight,
+  width: browserWidth,
+}))
 
 export default darkTheme

@@ -8,6 +8,7 @@ import theme from './styles/theme/index.js'
 import Appbar from './components/appbar'
 import Header from './components/header'
 import Body from './components/body'
+import { BackgroundImage } from './styles/theme/index.js';
 import { FooterContainer } from './styles/footer/index.js'
 
 
@@ -15,6 +16,7 @@ export default function Geck () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <BackgroundImage>
       <Container>
         <Header />
       </Container>
@@ -25,8 +27,9 @@ export default function Geck () {
         <Body />
       </Container>
       <FooterContainer>
-        Made by Holden Gjuka, last updated 2022
+          Made by Holden Gjuka, last updated 2022
       </FooterContainer>
+      </BackgroundImage>
     </ThemeProvider>
   )
 }

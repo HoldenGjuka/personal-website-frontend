@@ -1,9 +1,54 @@
+import React from 'react'
+
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
         BlogPaper, BlogHeader, BlogTitle, BlogBody, 
         SkillsHeader, SkillsBody } 
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
+
 import { browserWidth } from "../../styles/theme"
+
+//creates the blog feature of the webpage
+class Blogs extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      blogs: [""]
+    }
+    this.getBlogs()
+  }
+    
+  getBlogs = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/home/')
+      const output = await response.text()
+      const parsed_output = JSON.parse(output)
+      this.setState({
+        blogs: parsed_output,
+      })
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  render(){
+    return (
+      this.state.blogs.map(function(post){
+        return <BlogPost title={post.title} body={post.body} />
+      })
+    )
+  }
+}
+
+//creates HTML for a single BlogPost component
+function BlogPost(props) {
+  return(
+    <BlogPaper>
+      <BlogTitle>{props.title}</BlogTitle>
+      <BlogBody>{props.body}</BlogBody>
+    </BlogPaper>
+  )
+}
 
 export default function BodyDesktop({ matches }) {
   return (
@@ -13,42 +58,7 @@ export default function BodyDesktop({ matches }) {
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
           <Box sx={{height: 500, overflow: 'auto', minWidth: browserWidth * .7}}>
-            <BlogPaper>
-              <BlogTitle>title</BlogTitle>
-              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </BlogPaper>
-            <BlogPaper>
-              <BlogTitle>title</BlogTitle>
-              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </BlogPaper>
-            <BlogPaper>
-              <BlogTitle>title</BlogTitle>
-              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </BlogPaper>
-            <BlogPaper>
-              <BlogTitle>title</BlogTitle>
-              <BlogBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</BlogBody>
-            </BlogPaper>
+            <Blogs />
           </Box>
         </Stack>
       </BlogSpaceContainer>

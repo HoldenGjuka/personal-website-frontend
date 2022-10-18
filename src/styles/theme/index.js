@@ -1,7 +1,7 @@
 import { createTheme, styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 
-import Image from '../../images/backgrounds/wood-texture.jpeg'
+import Image from '../../images/backgrounds/blue-texture.jpeg'
 
 const darkTheme = createTheme({
   palette: {

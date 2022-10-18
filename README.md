@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Holden's Personal Website Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Author: Holden Gjuka
+
+## About this Application
+&nbsp;&nbsp;&nbsp;This application uses React and Material UI (MUI) to create the frontend of my full-stack personal website application. This full-stack app relies on a RESTful API to supply data such as blog posts and website images. The backend is written in Django and is located in a separate GitHub repository called personal-website-backend. It is not public yet.
+
+## Project Structure
+&nbsp;&nbsp;&nbsp;This is a React app, and as such important files like `App.js`, `index.css`, and `index.js` are located in the root of the `src/` folder. The rest of the project is broken into discrete sections, also located inside the src folder. The two most important directories inside `src/` are `components/` and `styles/`. The `components/` directory contains subfolders, each named after an essential React Component. There are up to three javascript files in each of these folders, `index.js` being the default file that is ran. This is present in every component's named subdirectory. There may be an additional two files of the form `\[componentname]Desktop.js` or `\[componentname]Mobile.js` that are referred to by `index.js` for the case of the site being loaded as a desktop or a mobile site. The `styles/` folder contains the theme for the custom MUI components found in the component files and are imported into the component from the correspondingly named subdirectory in `styles/`, for example the theme for appbar is found in the file `index.js` located in the directory `styles/appbar`.
+&nbsp;&nbsp;&nbsp;The other directory inside `src/` is pretty self-explanatory, `images/` is a collection of images used by the site. It will likely be deleted once the database hookup is linked back in to the project.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+ `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

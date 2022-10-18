@@ -3,6 +3,11 @@ import { Box } from '@mui/system'
 
 import Image from '../../images/backgrounds/blue-texture.jpeg'
 
+const Colors = {
+  paperBrown: '#C9701632',
+  buttonText: 'black',
+}
+
 const customTheme = createTheme({
   components: {
      MuiButton: {
@@ -12,7 +17,7 @@ const customTheme = createTheme({
             style: {
               fontWeight: 'bold',
               fontSize: 'large',
-              color: 'black'
+              color: Colors.buttonText,
             }
           }
         ]  
@@ -40,8 +45,10 @@ function getHeight() {
   );
 }
 
+//height of browser window on inital page load
 export const browserHeight = getHeight()
 
+//width of browser window on inital page load
 export const browserWidth = getWidth()
 
 

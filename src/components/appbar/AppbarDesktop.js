@@ -34,7 +34,12 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <Button onClick={this.onDownload} variant='bold'>Resume</Button>
+      <MyList type='row'>
+        <Button onClick={this.onDownload} variant='bold'>Resume</Button>
+        <Button variant='bold'>About Me</Button>
+        <Button variant='bold'>Email Me</Button>
+        <Button variant='bold'>Upcoming Projects</Button>
+      </MyList>
     )
   }
 }
@@ -42,11 +47,6 @@ class Navbar extends React.Component {
 //Parent function that renders the whole Appbar component
 export default function AppbarDesktop({matches}) {
   return (
-    <MyList type='row'>
-      <Navbar />
-      <Button variant='bold'>About Me</Button>
-      <Button variant='bold'>Email Me</Button>
-      <Button variant='bold'>Upcoming Projects</Button>
-    </MyList>
+    <Navbar />
   )
 }

@@ -25,40 +25,12 @@ const customTheme = createTheme({
   }
 })
 
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
-
-function getHeight() {
-  return Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.documentElement.clientHeight
-  );
-}
-
-//height of browser window on inital page load
-export const browserHeight = getHeight()
-
-//width of browser window on inital page load
-export const browserWidth = getWidth()
-
-
-
 //background image
-export const BackgroundImage = styled(Box, getWidth)(() => ({
+export const BackgroundImage = styled(Box)(() => ({
   backgroundImage: `url(${Image})`, 
   objectFit: 'fill',
   backgroundSize: 'cover',
-  height: '100vh',
+  height: '100%',
   width: '100%',
 }))
 

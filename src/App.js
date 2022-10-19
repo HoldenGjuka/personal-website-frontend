@@ -17,18 +17,18 @@ export default function Geck () {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BackgroundImage>
-      <Container>
-        <Header />
-      </Container>
-      <Container>
-        <Appbar />
-      </Container>
-      <Container>
-        <Body />
-      </Container>
-      <FooterContainer>
-          Made by Holden Gjuka, last updated 2022
-      </FooterContainer>
+        <Container>
+          <Header />
+        </Container>
+        <Container>
+          <Appbar />
+        </Container>
+        <Container>
+          <Body />
+        </Container>
+        <FooterContainer>
+            Made by Holden Gjuka, last updated 2022
+        </FooterContainer>
       </BackgroundImage>
     </ThemeProvider>
   )

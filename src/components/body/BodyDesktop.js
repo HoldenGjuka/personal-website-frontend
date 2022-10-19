@@ -31,8 +31,8 @@ class Blogs extends React.Component {
 
   render(){
     return (
-      this.state.blogs.map(function(post){
-        return <BlogPost title={post.title} body={post.body} />
+      this.state.blogs.map(function(post, index){  //bad code, should use item ID of some sort
+        return <BlogPost key={index} title={post.title} body={post.body} />
       })
     )
   }

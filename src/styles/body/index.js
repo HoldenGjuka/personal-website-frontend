@@ -12,12 +12,13 @@ export const BodyContainer = styled(Box)(() => ({
   marginTop: 14,
   justifyContent: 'center',
   alignitems: 'center',
+  overflow: 'hidden'
 }))
 
 //container
 export const BlogSpaceContainer = styled(Box)(() => ({
   display: 'flex',
-  
+  overflow: 'hidden'
 }))
 
 //Blog Space Header

@@ -12,7 +12,7 @@ import { BackgroundImage } from './styles/theme/index.js';
 import { FooterContainer } from './styles/footer/index.js'
 
 
-export default function Geck () {
+export default function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

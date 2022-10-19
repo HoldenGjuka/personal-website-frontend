@@ -58,8 +58,8 @@ export const BackgroundImage = styled(Box)(() => ({
   backgroundImage: `url(${Image})`, 
   objectFit: 'fill',
   backgroundSize: 'cover',
-  height: browserHeight,
-  width: browserWidth,
+  height: '100vh',
+  width: '100vw',
 }))
 
 export default customTheme

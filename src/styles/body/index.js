@@ -12,13 +12,14 @@ export const BodyContainer = styled(Box)(() => ({
   marginTop: 14,
   justifyContent: 'center',
   alignitems: 'center',
-  overflow: 'hidden'
+  // overflow: 'hidden'
 }))
 
 //container
 export const BlogSpaceContainer = styled(Box)(() => ({
   display: 'flex',
-  overflow: 'hidden'
+  flex: '1 0 auto',
+
 }))
 
 //Blog Space Header
@@ -50,7 +51,7 @@ export const BlogBody = styled(Typography)(() => ({
 //container
 export const SkillsContainer = styled(Box, Colors)(() => ({
   display: 'flex',
-  flex: '1 0 auto',
+  flex: '1 .5 auto',
   backgroundColor: Colors.paperBrown,
 }))
 

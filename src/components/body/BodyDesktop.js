@@ -6,8 +6,6 @@ import {BodyContainer, BlogSpaceContainer, SkillsContainer,
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
 
-import { browserWidth } from "../../styles/theme"
-
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
 class Blogs extends React.Component {
   constructor(props) {

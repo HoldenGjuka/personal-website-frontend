@@ -54,12 +54,12 @@ export const browserWidth = getWidth()
 
 
 //background image
-export const BackgroundImage = styled(Box)(() => ({
+export const BackgroundImage = styled(Box, getWidth)(() => ({
   backgroundImage: `url(${Image})`, 
   objectFit: 'fill',
   backgroundSize: 'cover',
   height: '100vh',
-  width: '100vw',
+  width: '100%',
 }))
 
 export default customTheme

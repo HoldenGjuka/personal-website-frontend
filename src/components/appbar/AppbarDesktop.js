@@ -32,13 +32,26 @@ class Navbar extends React.Component {
     link.click()
   }
 
+  onEmail = () => {
+    const link = document.createElement('a')
+    link.href = "mailto: holdengjuka@gmail.com"
+    link.click()
+  }
+
+  goGitHub = () => {
+    const link = document.createElement('a')
+    link.href = "http://github.com/HoldenGjuka"
+    link.target = "_blank"
+    link.click()
+  }
+
   render() {
     return (
       <MyList type='row'>
         <Button onClick={this.onDownload} variant='bold'>Resume</Button>
-        <Button variant='bold'>About Me</Button>
-        <Button variant='bold'>Email Me</Button>
-        <Button variant='bold'>Upcoming Projects</Button>
+        <Button onClick={this.onDownload} variant='bold'>About Me</Button>
+        <Button onClick={this.onEmail} variant='bold'>Email Me</Button>
+        <Button onClick={this.goGitHub} variant='bold'>Upcoming Projects</Button>
       </MyList>
     )
   }

@@ -27,8 +27,8 @@ class Navbar extends React.Component {
 
   onDownload = () => {
     const link = document.createElement('a')
-    link.download = 'resume.png'
-    link.href = 'data:application/png;base64,' + this.state.resume_b64
+    link.download = 'resume.pdf'
+    link.href = 'data:application/pdf;base64,' + this.state.resume_b64
     link.click()
   }
 

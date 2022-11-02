@@ -5,6 +5,7 @@ import {BodyContainer, BlogSpaceContainer, SkillsContainer,
         SkillsHeader, SkillsBody } 
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
+import db_url from "../../debug"
 
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
 class Blogs extends React.Component {
@@ -18,7 +19,7 @@ class Blogs extends React.Component {
     
   getBlogs = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/home/')
+      const response = await fetch(db_url + '/home/')
       const output = await response.text()
       const parsed_output = JSON.parse(output)
       this.setState({

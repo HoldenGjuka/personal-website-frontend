@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from "@mui/material";
 import { MyList } from "../../styles/appbar";
-import db_url from "../../debug"
+import { db_url } from "../../debug"
 
 
 class Navbar extends React.Component {

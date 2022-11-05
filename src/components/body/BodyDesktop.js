@@ -5,7 +5,7 @@ import {BodyContainer, BlogSpaceContainer, SkillsContainer,
         SkillsHeader, SkillsBody } 
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
-import db_url from "../../debug"
+import { db_url } from "../../debug"
 
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
 class Blogs extends React.Component {

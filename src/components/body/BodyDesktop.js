@@ -19,7 +19,7 @@ class Blogs extends React.Component {
     
   getBlogs = async () => {
     try {
-      const response = await fetch(db_url + '/home/')
+      const response = await fetch(db_url + 'home/')
       const output = await response.text()
       const parsed_output = JSON.parse(output)
       this.setState({

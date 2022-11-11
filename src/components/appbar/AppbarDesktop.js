@@ -16,7 +16,7 @@ class Navbar extends React.Component {
   
   getResume = async () => {
     try {
-      const response = await fetch(db_url + '/home/resume/')
+      const response = await fetch(db_url + 'home/resume/')
       const output = await response.text()
       this.setState({
         resume_b64: output,

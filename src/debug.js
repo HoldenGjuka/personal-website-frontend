@@ -1,4 +1,4 @@
-const DEBUG = true
+const DEBUG = false
 
 let database_url
 
@@ -7,7 +7,7 @@ let database_url
 if(DEBUG){
   database_url = "http://127.0.0.1:8000/"
 } else {
-  database_url = "http://127.0.0.1:8000/"
+  database_url = "http://73.169.221.60:8000/"
 }
 
 export const db_url = database_url

@@ -1,14 +1,20 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Typography } from '@mui/material'
+import theme from '../theme/index.js'
 
 //container
-export const HeaderContainer = styled(Box, Typography)(() => ({
+export const HeaderContainer = styled(Box, Typography, theme)(() => ({
   display: 'flex',
   marginTop: 4,
   marginBottom:4,
   justifyContent: 'center',
   alignitems: 'center',
-  fontSize: '6em',
+  [theme.breakpoints.up("sm")]: {
+    fontSize: '3em',
+  },
+  [theme.breakpoints.up("md")]: {
+    fontSize: '6em',
+  },
   flexGrow: 1,
 }))

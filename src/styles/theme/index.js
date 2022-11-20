@@ -8,7 +8,15 @@ export const Colors = {
   buttonText: 'black',
 }
 
-const customTheme = createTheme({
+//Dummy theme that passes custom breakpoints into customTheme
+let breakpointTheme = createTheme({
+  breakpoints: {xs: 0, sm: 600, md: 960, lg: 1280, xl: 1920},
+})
+
+
+//Overrides base MUI components, global theme to be used for the entire project
+//takes in breakpointTheme to allow the use of breakpoints
+const customTheme = createTheme(breakpointTheme, {
   components: {
      MuiButton: {
         variants: [
@@ -16,14 +24,18 @@ const customTheme = createTheme({
             props: { variant: 'bold' },
             style: {
               fontWeight: 'bold',
-              fontSize: 'large',
+              [breakpointTheme.breakpoints.up("sm")]: {
+                fontSize: 'medium',
+              },
+              [breakpointTheme.breakpoints.up("md")]: {
+                fontSize: 'large',
+              },
               color: Colors.buttonText,
             }
           }
         ]  
       }   
   },
-  breakpoints: {xs: 0, sm: 600, md: 960, lg: 1280, xl: 1920},
 })
 
 //background image

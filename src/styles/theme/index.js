@@ -10,7 +10,7 @@ export const Colors = {
 
 //Dummy theme that passes custom breakpoints into customTheme
 let breakpointTheme = createTheme({
-  breakpoints: {xs: 0, sm: 600, md: 960, lg: 1920, xl: 1920},
+  breakpoints: {xs: 0, sm: 600, md: 1080, lg: 1920, xl: 2560},
 })
 
 

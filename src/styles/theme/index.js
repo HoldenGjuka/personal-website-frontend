@@ -41,10 +41,11 @@ const customTheme = createTheme(breakpointTheme, {
 //background image
 export const BackgroundImage = styled(Box)(() => ({
   backgroundImage: `url(${Image})`, 
-  objectFit: 'fill',
-  backgroundSize: 'cover',
-  height: '100vmax',
-  width: '100%',
+  margin: 0,
+  padding: 0,
+  display: 'grid',
+  maxWidth: '100%',
+  minHeight: '100vh',
 }))
 
 export default customTheme

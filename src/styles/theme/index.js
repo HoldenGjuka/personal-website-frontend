@@ -10,7 +10,7 @@ export const Colors = {
 
 //Dummy theme that passes custom breakpoints into customTheme
 let breakpointTheme = createTheme({
-  breakpoints: {xs: 0, sm: 600, md: 960, lg: 1280, xl: 1920},
+  breakpoints: {xs: 0, sm: 600, md: 960, lg: 1920, xl: 1920},
 })
 
 
@@ -24,11 +24,14 @@ const customTheme = createTheme(breakpointTheme, {
             props: { variant: 'bold' },
             style: {
               fontWeight: 'bold',
-              [breakpointTheme.breakpoints.up("sm")]: {
+              [breakpointTheme.breakpoints.down("md")]: {
                 fontSize: 'medium',
               },
               [breakpointTheme.breakpoints.up("md")]: {
                 fontSize: 'large',
+              },
+              [breakpointTheme.breakpoints.up("lg")]: {
+                fontSize: 'x-large',
               },
               color: Colors.buttonText,
             }

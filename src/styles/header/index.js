@@ -10,11 +10,14 @@ export const HeaderContainer = styled(Box, Typography, theme)(() => ({
   marginBottom:4,
   justifyContent: 'center',
   alignitems: 'center',
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.down("lg")]: {
     fontSize: '3em',
   },
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("lg")]: {
     fontSize: '6em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '8em',
   },
   flexGrow: 1,
 }))

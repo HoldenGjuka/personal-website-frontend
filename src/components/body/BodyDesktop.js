@@ -58,7 +58,7 @@ export default function BodyDesktop({ matches }) {
       <BlogSpaceContainer>
         <Stack>
           <BlogHeader>Blog Space</BlogHeader>
-          <Box sx={{height: 500, overflow: 'auto', width: '70vw'}}>
+          <Box sx={{height: '65vh', overflow: 'auto', width: '70vw'}}>
             <Blogs />
           </Box>
         </Stack>

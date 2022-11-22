@@ -68,7 +68,7 @@ export default function BodyMobile({ matches }) {
         <Stack>
           <SkillsHeader>Skills and Knowledge</SkillsHeader>
           
-          <SkillsBody>Full Stack Development</SkillsBody>
+          <SkillsBody>Full Stack</SkillsBody>
           <SkillsBody>React</SkillsBody>
           <SkillsBody>Django</SkillsBody>
           <SkillsBody>GitHub</SkillsBody>

@@ -94,16 +94,16 @@ export const SkillsContainer = styled(Box, Colors)(() => ({
 //formatting for skills text
 export const SkillsHeader = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
-    fontSize: '1.4em',
+    fontSize: '1.5em',
   },
   [theme.breakpoints.between("md", "lg")]: {
-    fontSize: '1.7em',
+    fontSize: '1.8em',
   },
   [theme.breakpoints.up("lg")]: {
-    fontSize: '2em',
+    fontSize: '2.1em',
   },
   [theme.breakpoints.up("xl")]: {
-    fontSize: '2.3em',
+    fontSize: '2.4em',
   },
 }))
 

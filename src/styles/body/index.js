@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Paper, Typography } from '@mui/material'
 import { Colors } from '../theme/index.js'
+import theme from '../theme/index.js'
 
 
 //container
@@ -24,7 +25,18 @@ export const BlogSpaceContainer = styled(Box)(() => ({
 
 //Blog Space Header
 export const BlogHeader = styled(Typography)(() => ({
-  fontSize: '5em',
+  [theme.breakpoints.down("md")]: {
+    fontSize: '2.5em',
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '3em',
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '4em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '5em',
+  },
 }))
 
 export const BlogPaper = styled(Paper, Colors)(() => ({
@@ -37,14 +49,38 @@ export const BlogPaper = styled(Paper, Colors)(() => ({
 
 //blog title typography
 export const BlogTitle = styled(Typography)(() => ({
-  fontSize: '2em',
-  paddingLeft: 15,
+  [theme.breakpoints.down("md")]: {
+    fontSize: '1.2em',
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '1.4em',
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '1.6em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '2em',
+  },
 }))
 
 //blog title typography
 export const BlogBody = styled(Typography)(() => ({
-  fontSize: '1em',
-  paddingLeft: 5,
+  [theme.breakpoints.down("md")]: {
+    fontSize: '.8em',
+    paddingLeft: "5",
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '1.0em',
+    paddingLeft: "10",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '1.2em',
+    paddingLeft: "15",
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '1.6em',
+    paddingLeft: "20",
+  },
 }))
 
 
@@ -57,10 +93,32 @@ export const SkillsContainer = styled(Box, Colors)(() => ({
 
 //formatting for skills text
 export const SkillsHeader = styled(Typography)(() => ({
-  fontSize: '2em',
+  [theme.breakpoints.down("md")]: {
+    fontSize: '1.4em',
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '1.7em',
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '2em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '2.3em',
+  },
 }))
 
 //formatting for skills text
 export const SkillsBody = styled(Typography)(() => ({
-  fontSize: '1.3em'
+  [theme.breakpoints.down("md")]: {
+    fontSize: '1.2em',
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '1.4em',
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '1.6em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '1.8em',
+  },
 }))

@@ -11,8 +11,11 @@ export const HeaderContainer = styled(Box, Typography, theme)(() => ({
   marginBottom:4,
   justifyContent: 'center',
   alignitems: 'center',
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down("md")]: {
     fontSize: '3em',
+  },
+  [theme.breakpoints.between("md", "lg")]: {
+    fontSize: '4em',
   },
   [theme.breakpoints.up("lg")]: {
     fontSize: '6em',

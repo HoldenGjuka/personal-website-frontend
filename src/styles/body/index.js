@@ -2,7 +2,7 @@ import React from 'react'
 
 import { styled } from '@mui/material/styles'
 import { Box, borders } from '@mui/system'
-import { Paper, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 
 import { Colors } from '../theme/index.js'
 import theme from '../theme/index.js'
@@ -36,7 +36,7 @@ export const BlueHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
 }))
 
 //Blog Space Header
-export const BlogHeader = styled(Typography)(() => ({
+export const BlogsHeader = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '2.5em',
   },
@@ -51,16 +51,13 @@ export const BlogHeader = styled(Typography)(() => ({
   },
 }))
 
-export const BlogPaper = styled(Paper, Colors)(() => ({
-  elevation: 10,
-  borderRadius: 4,
-  paddingBottom: 15,
-  variant: 'outlined',
-  // backgroundColor: Colors.paperBrown,
+export const BlogPostBox = styled(Box, borders, Colors)(() => ({
+
+  backgroundColor: Colors.blue,
 }))
 
-//blog title typography
-export const BlogTitle = styled(Typography)(() => ({
+//individual blogpost title typography
+export const BlogPostTitle = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '1.2em',
   },
@@ -75,8 +72,8 @@ export const BlogTitle = styled(Typography)(() => ({
   },
 }))
 
-//blog title typography
-export const BlogBody = styled(Typography)(() => ({
+//individual blog body typography
+export const BlogPostBody = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '.8em',
     paddingLeft: "5",
@@ -102,17 +99,7 @@ export const SkillsContainer = styled(Box, Colors)(() => ({
   flex: '1 .5 auto',
 }))
 
-export const SkillsBodyContainer = styled(Box, borders,Colors)(() => ({
-  backgroundColor: Colors.green,
-  borderColor: Colors.black,
-  border: '5px solid black',
-}))
-
-export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
-  background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.green + ' 25%)'
-}))
-
-//formatting for skills text
+//formatting for skills header text
 export const SkillsHeader = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '2.5em',
@@ -128,7 +115,17 @@ export const SkillsHeader = styled(Typography)(() => ({
   },
 }))
 
-//formatting for skills text
+export const SkillsBodyContainer = styled(Box, borders,Colors)(() => ({
+  backgroundColor: Colors.green,
+  borderColor: Colors.black,
+  border: '5px solid black',
+}))
+
+export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
+  background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.green + ' 25%)'
+}))
+
+//formatting for skills body text
 export const SkillsBody = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '1.2em',

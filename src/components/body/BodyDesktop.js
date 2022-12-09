@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
-        BlogPaper, BlogHeader, BlogTitle, BlogBody, 
+        BlogPostBox, BlogsHeader, BlogPostTitle, BlogPostBody, 
         SkillsHeader, SkillsBody, BlueHighlightSpanBox,
         SkillsBodyContainer, GreenHighlightSpanBox} 
         from "../../styles/body"
@@ -43,10 +43,10 @@ class Blogs extends React.Component {
 //creates HTML for a single BlogPost component
 function BlogPost(props) {
   return(
-    <BlogPaper>
-      <BlogTitle>{props.title}</BlogTitle>
-      <BlogBody>{props.body}</BlogBody>
-    </BlogPaper>
+    <BlogPostBox>
+      <BlogPostTitle>{props.title}</BlogPostTitle>
+      <BlogPostBody>{props.body}</BlogPostBody>
+    </BlogPostBox>
   )
 }
 
@@ -58,9 +58,9 @@ export default function BodyDesktop({ matches }) {
       
       <BlogSpaceContainer>
         <Stack>
-          <BlogHeader>
+          <BlogsHeader>
             <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
-          </BlogHeader>
+          </BlogsHeader>
           <Box sx={{height: '65vh', overflow: 'auto', width: '70vw'}}>
             <Blogs />
           </Box>

@@ -18,7 +18,6 @@ export const BodyContainer = styled(Box, Colors)(() => ({
   justifyContent: 'center',
   alignitems: 'center',
   maxWidth: 'false',
-  // overflow: 'hidden'
 }))
 
 //container
@@ -51,9 +50,15 @@ export const BlogsHeader = styled(Typography)(() => ({
   },
 }))
 
+//container for the BlogPost title and body
 export const BlogPostBox = styled(Box, borders, Colors)(() => ({
-
   backgroundColor: Colors.blue,
+  borderColor: Colors.black,
+  border: '5px solid black',
+  marginBottom: '10px',
+  '&:last-of-type': {
+    marginBottom: '0px'
+  }
 }))
 
 //individual blogpost title typography

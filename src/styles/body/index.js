@@ -10,7 +10,6 @@ import theme from '../theme/index.js'
 
 //container
 export const BodyContainer = styled(Box, Colors)(() => ({
-  backgroundColor: Colors.pink,
   display: 'flex',
   gap: '2%',
   flexDirection:'row',

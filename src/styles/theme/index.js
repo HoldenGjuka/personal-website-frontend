@@ -1,11 +1,12 @@
-import { createTheme, styled } from '@mui/material/styles'
-import { Box } from '@mui/system'
-
-import Image from '../../images/backgrounds/blue-texture.jpeg'
+import { createTheme } from '@mui/material/styles'
 
 export const Colors = {
   paperBrown: '#C9701632',
   buttonText: 'black',
+  blue: '#5bbfcf',
+  black: '#050000',
+  green: '#20b9a5',
+  pink: '#fbc5d3',
 }
 
 //Dummy theme that passes custom breakpoints into customTheme
@@ -40,15 +41,5 @@ const customTheme = createTheme(breakpointTheme, {
       }   
   },
 })
-
-//background image
-export const BackgroundImage = styled(Box)(() => ({
-  backgroundImage: `url(${Image})`, 
-  margin: 0,
-  padding: 0,
-  display: 'grid',
-  maxWidth: '100%',
-  minHeight: '100vh',
-}))
 
 export default customTheme

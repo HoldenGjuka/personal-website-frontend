@@ -8,7 +8,6 @@ import theme from './styles/theme/index.js'
 import Appbar from './components/appbar'
 import Header from './components/header'
 import Body from './components/body'
-import { BackgroundImage } from './styles/theme/index.js';
 import { FooterContainer } from './styles/footer/index.js'
 
 
@@ -16,10 +15,10 @@ export default function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BackgroundImage>
         <Container>
           <Header />
         </Container>
+        <hr size="10" color="black"></hr>
         <Container>
           <Appbar />
         </Container>
@@ -29,7 +28,6 @@ export default function App () {
         <FooterContainer>
             Made by Holden Gjuka, last updated 2022
         </FooterContainer>
-      </BackgroundImage>
     </ThemeProvider>
   )
 }

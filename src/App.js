@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Container } from '@mui/material'
 import { ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -15,17 +14,11 @@ export default function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-        <Container>
           <Header />
-        </Container>
-        <Container>
           <Appbar />
-        </Container>
         <PinkBackground>
-        <hr size="10" color="black"></hr>
-          <Container>
-            <Body />
-          </Container>
+          <hr size="10" color="black"></hr>
+          <Body />
         </PinkBackground>
     </ThemeProvider>
   )

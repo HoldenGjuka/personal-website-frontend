@@ -20,8 +20,8 @@ export const MyList = styled(List)(({ type }) => ({
   },
 }))
 
+//individual Buttons for appbar, further stylings in styles/theme
 export const AppbarButton = styled(Button, theme)(({ type }) => ({
-  
   marginRight: '1.5%',
   '&:last-of-type': {
     marginRight: '0px'

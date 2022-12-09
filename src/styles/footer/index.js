@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles'
-import { Box, textAlign } from '@mui/system'
+import { Box } from '@mui/system'
 import { Typography } from '@mui/material'
 
 //container

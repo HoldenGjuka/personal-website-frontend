@@ -2,7 +2,6 @@ import { createTheme } from '@mui/material/styles'
 
 export const Colors = {
   paperBrown: '#C9701632',
-  buttonText: 'black',
   blue: '#5bbfcf',
   black: '#050000',
   green: '#20b9a5',
@@ -20,11 +19,21 @@ let breakpointTheme = createTheme({
 const customTheme = createTheme(breakpointTheme, {
   components: {
      MuiButton: {
+        defaultProps: {
+          disableRipple: true
+        },
         variants: [
           {
             props: { variant: 'bold' },
             style: {
+              backgroundColor: Colors.green,
+              borderRadius: '0',
+              boxShadow: '6px 6px 0px 0px',
+              disableRipple: 'true',
               fontWeight: 'bold',
+              '&:hover': {
+                backgroundColor: Colors.pink
+              },
               [breakpointTheme.breakpoints.down("md")]: {
                 fontSize: 'medium',
               },
@@ -34,7 +43,7 @@ const customTheme = createTheme(breakpointTheme, {
               [breakpointTheme.breakpoints.up("lg")]: {
                 fontSize: 'x-large',
               },
-              color: Colors.buttonText,
+              color: Colors.black,
             }
           }
         ]  

@@ -1,7 +1,10 @@
+import React from 'react'
+
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Typography } from '@mui/material'
-import theme from '../theme/index.js'
+
+import theme, { Colors } from '../theme/index.js'
 
 //container
 export const HeaderContainer = styled(Box, Typography, theme)(() => ({
@@ -24,4 +27,12 @@ export const HeaderContainer = styled(Box, Typography, theme)(() => ({
     fontSize: '8em',
   },
   flexGrow: 1,
+}))
+
+const SpanBox = React.forwardRef(function SpanBox(props, ref) {
+  return <Box ref={ref} component="span" {...props} />;
+});
+
+export const HighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
+  background: 'linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%)'
 }))

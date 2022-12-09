@@ -1,7 +1,11 @@
-import { HeaderContainer } from "../../styles/header"
+import { HeaderContainer, HighlightSpanBox } from "../../styles/header"
 
 export default function HeaderDesktop({matches}){
   return (
-    <HeaderContainer>Holden's Website</HeaderContainer>
+    <HeaderContainer>
+      <HighlightSpanBox>
+        Holden's Website
+      </HighlightSpanBox>
+    </HeaderContainer>
   )
 }

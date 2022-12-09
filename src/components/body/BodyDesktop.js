@@ -3,8 +3,7 @@ import React from 'react'
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
         BlogPaper, BlogHeader, BlogTitle, BlogBody, 
         SkillsHeader, SkillsBody, BlueHighlightSpanBox,
-        SkillsBodyContainer, 
-        GreenHighlightSpanBox} 
+        SkillsBodyContainer, GreenHighlightSpanBox} 
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
 import { db_url } from "../../debug"

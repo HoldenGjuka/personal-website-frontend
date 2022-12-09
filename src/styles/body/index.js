@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { styled } from '@mui/material/styles'
-import { Box } from '@mui/system'
+import { Box, borders } from '@mui/system'
 import { Paper, Typography } from '@mui/material'
 
 import { Colors } from '../theme/index.js'
@@ -100,12 +100,12 @@ export const BlogBody = styled(Typography)(() => ({
 export const SkillsContainer = styled(Box, Colors)(() => ({
   display: 'flex',
   flex: '1 .5 auto',
-  // backgroundColor: Colors.paperBrown,
 }))
 
-export const SkillsBodyContainer = styled(Box, Colors)(() => ({
-  
-  // backgroundColor: Colors.paperBrown,
+export const SkillsBodyContainer = styled(Box, borders,Colors)(() => ({
+  backgroundColor: Colors.green,
+  borderColor: Colors.black,
+  border: '5px solid black',
 }))
 
 export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({

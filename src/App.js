@@ -18,10 +18,10 @@ export default function App () {
         <Container>
           <Header />
         </Container>
-        <hr size="10" color="black"></hr>
         <Container>
           <Appbar />
         </Container>
+        <hr size="10" color="black"></hr>
         <Container>
           <Body />
         </Container>

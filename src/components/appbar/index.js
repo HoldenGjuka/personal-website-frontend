@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { Button } from "@mui/material";
-import { MyList } from "../../styles/appbar";
+import { AppbarButton, MyList } from "../../styles/appbar";
 import { db_url } from "../../debug"
 
 
@@ -49,10 +48,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <MyList type='row'>
-        <Button onClick={this.onDownload} variant='bold'>Resume</Button>
-        <Button onClick={this.onDownload} variant='bold'>About Me</Button>
-        <Button onClick={this.onEmail} variant='bold'>Email Me</Button>
-        <Button onClick={this.goGitHub} variant='bold'>Upcoming Projects</Button>
+        <AppbarButton onClick={this.onDownload} variant='bold'>Resume</AppbarButton>
+        <AppbarButton onClick={this.onDownload} variant='bold'>About Me</AppbarButton>
+        <AppbarButton onClick={this.onEmail} variant='bold'>Email Me</AppbarButton>
+        <AppbarButton onClick={this.goGitHub} variant='bold'>Upcoming Projects</AppbarButton>
         {/* <Button variant='bold'>Dummy Button</Button> */}
       </MyList>
     )

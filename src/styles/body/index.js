@@ -11,7 +11,7 @@ import theme from '../theme/index.js'
 //container
 export const BodyContainer = styled(Box, Colors)(() => ({
   display: 'flex',
-  gap: '2%',
+  gap: '4%',
   flexDirection:'row',
   marginTop: 14,
   justifyContent: 'center',

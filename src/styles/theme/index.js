@@ -1,7 +1,6 @@
 import { createTheme } from '@mui/material/styles'
 
 export const Colors = {
-  paperBrown: '#C9701632',
   blue: '#5bbfcf',
   black: '#050000',
   green: '#20b9a5',

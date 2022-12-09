@@ -1,18 +1,23 @@
+import React from 'react'
+
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Paper, Typography } from '@mui/material'
+
 import { Colors } from '../theme/index.js'
 import theme from '../theme/index.js'
 
 
 //container
-export const BodyContainer = styled(Box)(() => ({
+export const BodyContainer = styled(Box, Colors)(() => ({
+  backgroundColor: Colors.pink,
   display: 'flex',
   gap: '2%',
   flexDirection:'row',
   marginTop: 14,
   justifyContent: 'center',
   alignitems: 'center',
+  maxWidth: 'false',
   // overflow: 'hidden'
 }))
 
@@ -20,7 +25,14 @@ export const BodyContainer = styled(Box)(() => ({
 export const BlogSpaceContainer = styled(Box)(() => ({
   display: 'flex',
   flex: '1 0 auto',
+}))
 
+const SpanBox = React.forwardRef(function SpanBox(props, ref) {
+  return <Box ref={ref} component="span" {...props} />;
+});
+
+export const BlueHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
+  background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.blue + ' 25%)'
 }))
 
 //Blog Space Header
@@ -44,7 +56,7 @@ export const BlogPaper = styled(Paper, Colors)(() => ({
   borderRadius: 4,
   paddingBottom: 15,
   variant: 'outlined',
-  backgroundColor: Colors.paperBrown,
+  // backgroundColor: Colors.paperBrown,
 }))
 
 //blog title typography
@@ -88,22 +100,31 @@ export const BlogBody = styled(Typography)(() => ({
 export const SkillsContainer = styled(Box, Colors)(() => ({
   display: 'flex',
   flex: '1 .5 auto',
-  backgroundColor: Colors.paperBrown,
+  // backgroundColor: Colors.paperBrown,
+}))
+
+export const SkillsBodyContainer = styled(Box, Colors)(() => ({
+  
+  // backgroundColor: Colors.paperBrown,
+}))
+
+export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
+  background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.green + ' 25%)'
 }))
 
 //formatting for skills text
 export const SkillsHeader = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
-    fontSize: '1.5em',
+    fontSize: '2.5em',
   },
   [theme.breakpoints.between("md", "lg")]: {
-    fontSize: '1.8em',
+    fontSize: '3em',
   },
   [theme.breakpoints.up("lg")]: {
-    fontSize: '2.1em',
+    fontSize: '4em',
   },
   [theme.breakpoints.up("xl")]: {
-    fontSize: '2.4em',
+    fontSize: '5em',
   },
 }))
 

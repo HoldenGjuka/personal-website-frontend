@@ -2,7 +2,9 @@ import React from 'react'
 
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
         BlogPaper, BlogHeader, BlogTitle, BlogBody, 
-        SkillsHeader, SkillsBody } 
+        SkillsHeader, SkillsBody, BlueHighlightSpanBox,
+        SkillsBodyContainer, 
+        GreenHighlightSpanBox} 
         from "../../styles/body"
 import { Box, Stack } from '@mui/material'
 import { db_url } from "../../debug"
@@ -57,7 +59,9 @@ export default function BodyDesktop({ matches }) {
       
       <BlogSpaceContainer>
         <Stack>
-          <BlogHeader>Blog Space</BlogHeader>
+          <BlogHeader>
+            <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
+          </BlogHeader>
           <Box sx={{height: '65vh', overflow: 'auto', width: '70vw'}}>
             <Blogs />
           </Box>
@@ -66,17 +70,22 @@ export default function BodyDesktop({ matches }) {
       
       <SkillsContainer>
         <Stack>
-          <SkillsHeader>Skills and Knowledge</SkillsHeader>
-          
-          <SkillsBody>Full Stack</SkillsBody>
-          <SkillsBody>React</SkillsBody>
-          <SkillsBody>Django</SkillsBody>
-          <SkillsBody>GitHub</SkillsBody>
-          <SkillsBody>VS Code</SkillsBody>
-          <SkillsBody>JavaScript</SkillsBody>
-          <SkillsBody>TypeScript</SkillsBody>
-          <SkillsBody>Java</SkillsBody>
-          <SkillsBody>Python</SkillsBody>
+          <SkillsHeader>
+            <GreenHighlightSpanBox>
+              Skills
+            </GreenHighlightSpanBox>
+          </SkillsHeader>
+          <SkillsBodyContainer>
+            <SkillsBody>Full Stack</SkillsBody>
+            <SkillsBody>React</SkillsBody>
+            <SkillsBody>Django</SkillsBody>
+            <SkillsBody>GitHub</SkillsBody>
+            <SkillsBody>VS Code</SkillsBody>
+            <SkillsBody>JavaScript</SkillsBody>
+            <SkillsBody>TypeScript</SkillsBody>
+            <SkillsBody>Java</SkillsBody>
+            <SkillsBody>Python</SkillsBody>
+          </SkillsBodyContainer>
         </Stack>
       </SkillsContainer>
 

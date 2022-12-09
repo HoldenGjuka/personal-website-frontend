@@ -53,7 +53,7 @@ class Navbar extends React.Component {
         <Button onClick={this.onDownload} variant='bold'>About Me</Button>
         <Button onClick={this.onEmail} variant='bold'>Email Me</Button>
         <Button onClick={this.goGitHub} variant='bold'>Upcoming Projects</Button>
-        <Button variant='bold'>Dummy Button</Button>
+        {/* <Button variant='bold'>Dummy Button</Button> */}
       </MyList>
     )
   }

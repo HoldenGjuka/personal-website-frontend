@@ -8,7 +8,6 @@ import theme from './styles/theme/index.js'
 import Appbar from './components/appbar'
 import Header from './components/header'
 import Body from './components/body'
-import { FooterContainer } from './styles/footer/index.js'
 import { Background as PinkBackground } from './styles/background/index.js'
 
 
@@ -28,9 +27,6 @@ export default function App () {
             <Body />
           </Container>
         </PinkBackground>
-        <FooterContainer>
-            Made by Holden Gjuka, last updated 2022
-        </FooterContainer>
     </ThemeProvider>
   )
 }

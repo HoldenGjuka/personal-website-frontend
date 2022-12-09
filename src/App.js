@@ -4,7 +4,7 @@ import { Container } from '@mui/material'
 import { ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
-import theme, { Colors } from './styles/theme/index.js'
+import theme from './styles/theme/index.js'
 import Appbar from './components/appbar'
 import Header from './components/header'
 import Body from './components/body'

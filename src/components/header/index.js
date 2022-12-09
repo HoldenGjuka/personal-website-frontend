@@ -1,19 +1,11 @@
-// import { useMediaQuery } from '@mui/material'
-// import { useTheme } from "@mui/material/styles";
-// import HeaderMobile from './HeaderMobile'
-import HeaderDesktop from './HeaderDesktop'
+import { HeaderContainer, HighlightSpanBox } from "../../styles/header"
 
-export default function Header() {
-
-  // const theme = useTheme()
-  // const matches = useMediaQuery(theme.breakpoints.down('md'))
-  // return (
-  //   <>
-  //     {matches ? <HeaderMobile /> :  <HeaderDesktop />}
-  //   </>
-  // )
-
+export default function Header(){
   return (
-    <HeaderDesktop />
+    <HeaderContainer>
+      <HighlightSpanBox>
+        Holden's Website
+      </HighlightSpanBox>
+    </HeaderContainer>
   )
 }

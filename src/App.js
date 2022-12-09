@@ -7,7 +7,9 @@ import theme from './styles/theme/index.js'
 import Appbar from './components/appbar'
 import Header from './components/header'
 import Body from './components/body'
+import Divider from './components/divider/index.js';
 import { Background as PinkBackground } from './styles/background/index.js'
+
 
 
 export default function App () {
@@ -16,8 +18,10 @@ export default function App () {
       <CssBaseline />
           <Header />
           <Appbar />
+          <Divider />
         <PinkBackground>
-          <hr size="10" color="black"></hr>
+          
+          
           <Body />
         </PinkBackground>
     </ThemeProvider>

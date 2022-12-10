@@ -11,11 +11,8 @@ import theme from '../theme/index.js'
 //container
 export const BodyContainer = styled(Box, Colors)(() => ({
   display: 'flex',
-  gap: '4%',
   flexDirection:'row',
-  marginTop: 14,
-  justifyContent: 'center',
-  alignitems: 'center',
+  marginTop: '1.5%',
   maxWidth: 'false',
 }))
 
@@ -23,6 +20,7 @@ export const BodyContainer = styled(Box, Colors)(() => ({
 export const BlogSpaceContainer = styled(Box)(() => ({
   display: 'flex',
   flex: '1 0 auto',
+  marginLeft: '3%',
 }))
 
 const SpanBox = React.forwardRef(function SpanBox(props, ref) {
@@ -132,15 +130,15 @@ export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
 //formatting for skills body text
 export const SkillsBody = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
-    fontSize: '1.2em',
-  },
-  [theme.breakpoints.between("md", "lg")]: {
-    fontSize: '1.4em',
-  },
-  [theme.breakpoints.up("lg")]: {
     fontSize: '1.6em',
   },
-  [theme.breakpoints.up("xl")]: {
+  [theme.breakpoints.between("md", "lg")]: {
     fontSize: '1.8em',
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: '2.0em',
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: '2.2em',
   },
 }))

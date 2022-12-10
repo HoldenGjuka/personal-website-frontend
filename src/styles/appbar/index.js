@@ -8,6 +8,7 @@ import theme from '../theme/index.js'
 export const MyList = styled(List)(({ type }) => ({
   display: type === 'row' ? 'flex' : 'block',
   marginLeft: '17%',
+  marginBottom: '1.5%',
   gap: '4%',
   [theme.breakpoints.down("md")]: {
     alignitems: 'center',

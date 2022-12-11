@@ -8,10 +8,9 @@ import theme, { Colors } from './Theme.js'
 
 //container
 export const HeaderContainer = styled(Box, Typography, theme)(() => ({
-  height: '1/8',
   marginTop: 4,
   marginBottom:4,
-  marginLeft: '10%',
+  textAlign: 'center',
   [theme.breakpoints.down("md")]: {
     fontSize: '3em',
   },

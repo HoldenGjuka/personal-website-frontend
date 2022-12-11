@@ -1,4 +1,4 @@
-import { HeaderContainer, HighlightSpanBox } from "../../styles/header"
+import { HeaderContainer, HighlightSpanBox } from "../styles/Header"
 
 export default function Header(){
   return (

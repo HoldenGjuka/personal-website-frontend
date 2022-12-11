@@ -4,8 +4,8 @@ import { styled } from '@mui/material/styles'
 import { Box, borders } from '@mui/system'
 import { Typography } from '@mui/material'
 
-import { Colors } from '../theme/index.js'
-import theme from '../theme/index.js'
+import { Colors } from './Theme.js'
+import theme from './Theme.js'
 
 
 //container

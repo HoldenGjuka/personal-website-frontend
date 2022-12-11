@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
-import { Colors } from '../theme'
+import { Colors } from './Theme'
 
 
 export const Background = styled(Box)(() => ({

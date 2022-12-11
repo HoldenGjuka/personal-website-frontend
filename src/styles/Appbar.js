@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles'
 import { Button, List } from '@mui/material'
 
-import theme from '../theme/index.js'
+import theme from './Theme.js'
 
 
 //list for header buttons

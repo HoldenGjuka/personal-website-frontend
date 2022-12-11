@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { AppbarButton, MyList } from "../../styles/appbar";
-import { db_url } from "../../debug"
+import { AppbarButton, MyList } from "../styles/Appbar";
+import { db_url } from "../debug"
 
 
 class Navbar extends React.Component {

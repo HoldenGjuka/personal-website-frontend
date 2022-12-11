@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 import { Typography } from '@mui/material'
 
-import theme, { Colors } from '../theme/index.js'
+import theme, { Colors } from './Theme.js'
 
 //container
 export const HeaderContainer = styled(Box, Typography, theme)(() => ({

@@ -6,5 +6,4 @@ import { Colors } from './Theme'
 export const RemainderContainer = styled(Container)(() => ({
   backgroundColor: Colors.pink,
   flex: '1 1 auto',
-  bottom: '0',
 }))

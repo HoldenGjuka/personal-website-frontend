@@ -12,7 +12,7 @@ import theme from './Theme.js'
 export const BodyContainer = styled(Box, Colors)(() => ({
   display: 'flex',
   flexDirection:'row',
-  marginTop: '1.5%',
+  paddingTop: '1.5%',
   maxWidth: 'false',
 }))
 

@@ -11,7 +11,7 @@ import Appbar from './components/Appbar'
 import Header from './components/Header'
 import Body from './components/Body'
 import Divider from './components/Divider';
-import Remainder from './components/Remainder';
+import Footer from './components/Footer';
 
 
 
@@ -27,7 +27,7 @@ export default function App () {
           <Background>
             <Body />
           </Background>
-          <Remainder />
+          <Footer />
         </BigBadContainer>
     </ThemeProvider>
   )

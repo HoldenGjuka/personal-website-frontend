@@ -14,6 +14,7 @@ export const BodyContainer = styled(Box, Colors)(() => ({
   flexDirection:'row',
   paddingTop: '1.5%',
   maxWidth: 'false',
+  flex: '0 1 auto'
 }))
 
 //container

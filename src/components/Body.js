@@ -1,11 +1,10 @@
 import React from 'react'
 
-import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
+import { BodyContainer, BlogSpaceContainer, SkillsContainer, 
         BlogPostBox, BlogsHeader, BlogPostTitle, BlogPostBody, 
         SkillsHeader, SkillsBody, BlueHighlightSpanBox,
-        SkillsBodyContainer, GreenHighlightSpanBox, BlogsContainer} 
+        SkillsBodyContainer, GreenHighlightSpanBox, BlogsContainer } 
         from "../styles/Body"
-import { Box } from '@mui/material'
 import { db_url } from "../debug"
 
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs

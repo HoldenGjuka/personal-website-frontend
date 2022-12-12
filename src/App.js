@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, ThemeProvider } from '@mui/system'
+import { ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from './styles/Theme'

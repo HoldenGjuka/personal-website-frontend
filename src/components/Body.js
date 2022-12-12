@@ -3,7 +3,7 @@ import React from 'react'
 import {BodyContainer, BlogSpaceContainer, SkillsContainer, 
         BlogPostBox, BlogsHeader, BlogPostTitle, BlogPostBody, 
         SkillsHeader, SkillsBody, BlueHighlightSpanBox,
-        SkillsBodyContainer, GreenHighlightSpanBox} 
+        SkillsBodyContainer, GreenHighlightSpanBox, BlogsContainer} 
         from "../styles/Body"
 import { Box } from '@mui/material'
 import { db_url } from "../debug"
@@ -60,9 +60,9 @@ export default function Body() {
         <BlogsHeader>
           <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
         </BlogsHeader>
-        <Box sx={{overflow: 'auto', width: '70vw'}}>
+        <BlogsContainer>
           <Blogs />
-        </Box>
+        </BlogsContainer>
       </BlogSpaceContainer>
       
       <SkillsContainer>
@@ -73,7 +73,7 @@ export default function Body() {
             </GreenHighlightSpanBox>
           </SkillsHeader>
           <SkillsBodyContainer>
-            <SkillsBody>Full Stack</SkillsBody>
+            <SkillsBody>Full Stack Dev   </SkillsBody>
             <SkillsBody>React</SkillsBody>
             <SkillsBody>Django</SkillsBody>
             <SkillsBody>GitHub</SkillsBody>

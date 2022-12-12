@@ -48,6 +48,11 @@ export const BlogsHeader = styled(Typography)(() => ({
   },
 }))
 
+//container for the Blogs of BlogSpace, does not include the BlogHeader
+export const BlogsContainer = styled(Box)(() => ({
+  overflow: 'auto', width: '70vw'
+}))
+
 //container for the BlogPost title and body
 export const BlogPostBox = styled(Box, borders, Colors)(() => ({
   backgroundColor: Colors.blue,

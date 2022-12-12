@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ThemeProvider } from '@mui/system'
+import { Container, ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from './styles/Theme'
@@ -21,8 +21,10 @@ export default function App () {
     <ThemeProvider theme={theme}>
       <CssBaseline />
         <BigBadContainer>
-          <Header />
-          <Appbar />
+          <Container sx={{flex: '0 1 auto'}}>
+            <Header />
+            <Appbar />
+          </Container>
           <Divider />
           <Background>
             <Body />

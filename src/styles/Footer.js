@@ -5,5 +5,5 @@ import { Colors } from './Theme'
 
 export const FooterContainer = styled(Container)(() => ({
   backgroundColor: Colors.pink,
-  flex: '0 1 20px',
+  flex: ' 1 20px',
 }))

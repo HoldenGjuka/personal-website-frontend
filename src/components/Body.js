@@ -57,14 +57,12 @@ export default function Body() {
     <BodyContainer>
       
       <BlogSpaceContainer>
-        <div>
-          <BlogsHeader>
-            <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
-          </BlogsHeader>
-          <Box sx={{overflow: 'auto', width: '70vw'}}>
-            <Blogs />
-          </Box>
-        </div>
+        <BlogsHeader>
+          <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
+        </BlogsHeader>
+        <Box sx={{overflow: 'auto', width: '70vw'}}>
+          <Blogs />
+        </Box>
       </BlogSpaceContainer>
       
       <SkillsContainer>

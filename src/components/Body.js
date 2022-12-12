@@ -61,7 +61,7 @@ export default function Body() {
           <BlogsHeader>
             <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
           </BlogsHeader>
-          <Box sx={{height: '65vh', overflow: 'auto', width: '70vw'}}>
+          <Box sx={{overflow: 'auto', width: '70vw'}}>
             <Blogs />
           </Box>
         </Stack>

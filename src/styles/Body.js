@@ -14,7 +14,8 @@ export const BodyContainer = styled(Box, Colors)(() => ({
   flexDirection:'row',
   paddingTop: '1.5%',
   maxWidth: 'false',
-  flex: '0 1 auto'
+  flex: '0 1 auto',
+  overflowY: 'auto'
 }))
 
 //container
@@ -61,6 +62,7 @@ export const BlogPostBox = styled(Box, borders, Colors)(() => ({
 
 //individual blogpost title typography
 export const BlogPostTitle = styled(Typography)(() => ({
+  paddingLeft: '10px',
   [theme.breakpoints.down("md")]: {
     fontSize: '1.2em',
   },
@@ -79,19 +81,19 @@ export const BlogPostTitle = styled(Typography)(() => ({
 export const BlogPostBody = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '.8em',
-    paddingLeft: "5",
+    paddingLeft: '10px',
   },
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: '1.0em',
-    paddingLeft: "10",
+    paddingLeft: '15px',
   },
   [theme.breakpoints.up("lg")]: {
     fontSize: '1.2em',
-    paddingLeft: "15",
+    paddingLeft: '20px',
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: '1.6em',
-    paddingLeft: "20",
+    paddingLeft: '25px',
   },
 }))
 

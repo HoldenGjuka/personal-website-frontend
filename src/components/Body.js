@@ -5,7 +5,7 @@ import {BodyContainer, BlogSpaceContainer, SkillsContainer,
         SkillsHeader, SkillsBody, BlueHighlightSpanBox,
         SkillsBodyContainer, GreenHighlightSpanBox} 
         from "../styles/Body"
-import { Box, Stack } from '@mui/material'
+import { Box } from '@mui/material'
 import { db_url } from "../debug"
 
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
@@ -57,18 +57,18 @@ export default function Body() {
     <BodyContainer>
       
       <BlogSpaceContainer>
-        <Stack>
+        <div>
           <BlogsHeader>
             <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
           </BlogsHeader>
           <Box sx={{overflow: 'auto', width: '70vw'}}>
             <Blogs />
           </Box>
-        </Stack>
+        </div>
       </BlogSpaceContainer>
       
       <SkillsContainer>
-        <Stack>
+        <div>
           <SkillsHeader>
             <GreenHighlightSpanBox>
               Skills
@@ -85,7 +85,7 @@ export default function Body() {
             <SkillsBody>Java</SkillsBody>
             <SkillsBody>Python</SkillsBody>
           </SkillsBodyContainer>
-        </Stack>
+        </div>
       </SkillsContainer>
 
     </BodyContainer>

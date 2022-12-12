@@ -21,10 +21,8 @@ export default function App () {
     <ThemeProvider theme={theme}>
       <CssBaseline />
         <BigBadContainer>
-          <Container sx={{flex: '0 1 auto'}}>
-            <Header />
-            <Appbar />
-          </Container>
+          <Header />
+          <Appbar />
           <Divider />
           <Background>
             <Body />

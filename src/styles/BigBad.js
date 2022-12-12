@@ -7,5 +7,5 @@ export const BigBadContainer = styled(Box)(() => ({
   display: 'flex',
   disableGutters: true,
   justifyContent: 'stretch',
-  minHeight: '100vh',
+  height: '100vh',
 }))

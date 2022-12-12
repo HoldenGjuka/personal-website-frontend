@@ -23,7 +23,7 @@ export const HeaderContainer = styled(Box, Typography, theme)(() => ({
   [theme.breakpoints.up("xl")]: {
     fontSize: '8em',
   },
-  flexGrow: 1,
+  flex: '0 1 auto'
 }))
 
 const SpanBox = React.forwardRef(function SpanBox(props, ref) {

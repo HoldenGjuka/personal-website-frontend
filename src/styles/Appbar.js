@@ -11,12 +11,11 @@ export const MyList = styled(List)(({ type }) => ({
   gap: '7%',
   justifyContent: 'center',
   [theme.breakpoints.down("md")]: {
-    
-    
     marginRight: '0',
     marginLeft: '0',
     gap: '1.5%',
   },
+  flex: '0 1 auto'
 }))
 
 //individual Buttons for appbar, further stylings in styles/theme

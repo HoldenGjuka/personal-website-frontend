@@ -20,7 +20,6 @@ export const BodyContainer = styled(Box, Colors)(() => ({
 
 //container
 export const BlogSpaceContainer = styled(Box)(() => ({
-  display: 'flex',
   flex: '1 0 auto',
   marginLeft: '3%',
 }))

@@ -9,5 +9,6 @@ export const FooterContainer = styled(Box)(() => ({
   flex: ' 1 20px',
   padding: 0,
   disableGutters: true,
-  winWidth: '100%'
+  winWidth: '100%',
+  overflow: 'clip'
 }))

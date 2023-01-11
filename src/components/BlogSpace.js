@@ -1,10 +1,8 @@
 import React from 'react'
 
-import { BodyContainer, BlogSpaceContainer, SkillsContainer, 
-        BlogPostBox, BlogsHeader, BlogPostTitle, BlogPostBody, 
-        SkillsHeader, SkillsBody, BlueHighlightSpanBox,
-        SkillsBodyContainer, GreenHighlightSpanBox, BlogsContainer } 
-        from "../styles/Body"
+import { BlogSpaceContainer, BlogPostBox, BlogsHeader, BlogPostTitle, 
+        BlogPostBody, BlueHighlightSpanBox, BlogsContainer } 
+        from "../styles/BlogSpace"
 import { db_url } from "../debug"
 
 //Retrieves blogs data and renders the blogs, calls BlogPost for individual blogs
@@ -53,8 +51,6 @@ function BlogPost(props) {
 //Parent Function rendering the entirety of the Body Component
 export default function Body() {
   return (
-    <BodyContainer>
-      
       <BlogSpaceContainer>
         <BlogsHeader>
           <BlueHighlightSpanBox>Blog Space</BlueHighlightSpanBox>
@@ -63,28 +59,5 @@ export default function Body() {
           <Blogs />
         </BlogsContainer>
       </BlogSpaceContainer>
-      
-      <SkillsContainer>
-        <div>
-          <SkillsHeader>
-            <GreenHighlightSpanBox>
-              Skills
-            </GreenHighlightSpanBox>
-          </SkillsHeader>
-          <SkillsBodyContainer>
-            <SkillsBody>Full Stack Dev   </SkillsBody>
-            <SkillsBody>React</SkillsBody>
-            <SkillsBody>Django</SkillsBody>
-            <SkillsBody>GitHub</SkillsBody>
-            <SkillsBody>VS Code</SkillsBody>
-            <SkillsBody>JavaScript</SkillsBody>
-            <SkillsBody>TypeScript</SkillsBody>
-            <SkillsBody>Java</SkillsBody>
-            <SkillsBody>Python</SkillsBody>
-          </SkillsBodyContainer>
-        </div>
-      </SkillsContainer>
-
-    </BodyContainer>
   )
 }

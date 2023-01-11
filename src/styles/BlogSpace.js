@@ -8,27 +8,21 @@ import { Colors } from './Theme.js'
 import theme from './Theme.js'
 
 
-//container
-export const BodyContainer = styled(Box, Colors)(() => ({
-  display: 'flex',
-  flexDirection:'row',
-  paddingTop: '1.5%',
-  maxWidth: 'false',
-}))
 
 //container
-export const BlogSpaceContainer = styled(Box)(() => ({
+export const BlogSpaceContainer = styled(Box, Colors)(() => ({
+  backgroundColor: Colors.pink,
   gridArea: 'b',
   overflowY: 'scroll',
-  [theme.breakpoints.down("md")]: {
-    marginLeft: '3%',
-  },
-  [theme.breakpoints.up("md")]: {
-    marginLeft: '6%',
-  },
-  [theme.breakpoints.up("lg")]: {
-    marginLeft: '8%',
-  },
+  // [theme.breakpoints.down("md")]: {
+  //   marginLeft: '3%',
+  // },
+  // [theme.breakpoints.up("md")]: {
+  //   marginLeft: '6%',
+  // },
+  // [theme.breakpoints.up("lg")]: {
+  //   marginLeft: '8%',
+  // },
   flex: '1 1 auto',
 }))
 
@@ -107,64 +101,5 @@ export const BlogPostBody = styled(Typography)(() => ({
   [theme.breakpoints.up("xl")]: {
     fontSize: '1.6em',
     paddingLeft: '25px',
-  },
-}))
-
-
-//container
-export const SkillsContainer = styled(Box, Colors)(() => ({
-  gridArea: 's',
-  [theme.breakpoints.down("md")]: {
-    marginRight: '3%',
-  },
-  [theme.breakpoints.up("md")]: {
-    marginRight: '6%',
-  },
-  [theme.breakpoints.up("lg")]: {
-    marginRight: '8%',
-  },
-  flex: '.7 .5 auto',
-}))
-
-//formatting for skills header text
-export const SkillsHeader = styled(Typography)(() => ({
-  [theme.breakpoints.down("md")]: {
-    fontSize: '2.5em',
-  },
-  [theme.breakpoints.between("md", "lg")]: {
-    fontSize: '3em',
-  },
-  [theme.breakpoints.up("lg")]: {
-    fontSize: '4em',
-  },
-  [theme.breakpoints.up("xl")]: {
-    fontSize: '5em',
-  },
-}))
-
-export const SkillsBodyContainer = styled(Box, borders,Colors)(() => ({
-  backgroundColor: Colors.green,
-  borderColor: Colors.black,
-  border: '5px solid black',
-}))
-
-export const GreenHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
-  background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.green + ' 25%)'
-}))
-
-//formatting for skills body text
-export const SkillsBody = styled(Typography)(() => ({
-  marginLeft: '1.5%',
-  [theme.breakpoints.down("md")]: {
-    fontSize: '1.6em',
-  },
-  [theme.breakpoints.between("md", "lg")]: {
-    fontSize: '1.8em',
-  },
-  [theme.breakpoints.up("lg")]: {
-    fontSize: '2.0em',
-  },
-  [theme.breakpoints.up("xl")]: {
-    fontSize: '2.2em',
   },
 }))

@@ -9,9 +9,10 @@ import { BigBadContainer } from './styles/BigBad';
 
 import Appbar from './components/Appbar'
 import Header from './components/Header'
-import Body from './components/Body'
+import BlogSpace from './components/BlogSpace'
 import Divider from './components/Divider';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 
 
@@ -24,9 +25,10 @@ export default function App () {
           <Header />
           <Appbar />
           <Divider />
-          <Background>
-            <Body />
-          </Background>
+          {/* <Background> */}
+            <BlogSpace />
+            <Skills />
+          {/* </Background> */}
           <Footer />
         </BigBadContainer>
     </ThemeProvider>

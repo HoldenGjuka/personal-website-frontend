@@ -6,6 +6,7 @@ import theme from './Theme.js'
 
 //list for header buttons
 export const MyList = styled(List)(({ type }) => ({
+  gridArea: 'a',
   display: type === 'row' ? 'flex' : 'block',
   marginBottom: '1.5%',
   gap: '7%',

@@ -4,6 +4,7 @@ import { Colors } from './Theme'
 
 
 export const FooterContainer = styled(Box)(() => ({
+  gridArea: 'f',
   backgroundColor: Colors.pink,
   flex: ' 1 20px',
   padding: 0,

@@ -8,6 +8,7 @@ import theme, { Colors } from './Theme.js'
 
 //container
 export const HeaderContainer = styled(Box, Typography, theme)(() => ({
+  gridArea: 'h',
   marginTop: 4,
   marginBottom:4,
   textAlign: 'center',

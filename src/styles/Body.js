@@ -14,11 +14,12 @@ export const BodyContainer = styled(Box, Colors)(() => ({
   flexDirection:'row',
   paddingTop: '1.5%',
   maxWidth: 'false',
-  flex: '0 1 auto',
 }))
 
 //container
 export const BlogSpaceContainer = styled(Box)(() => ({
+  gridArea: 'b',
+  overflowY: 'scroll',
   [theme.breakpoints.down("md")]: {
     marginLeft: '3%',
   },
@@ -57,7 +58,7 @@ export const BlogsHeader = styled(Typography)(() => ({
 
 //container for the Blogs of BlogSpace, does not include the BlogHeader
 export const BlogsContainer = styled(Box)(() => ({
-  overflow: 'auto',
+  overflowY: 'scroll',
   width: '65vw',
 }))
 
@@ -112,6 +113,7 @@ export const BlogPostBody = styled(Typography)(() => ({
 
 //container
 export const SkillsContainer = styled(Box, Colors)(() => ({
+  gridArea: 's',
   [theme.breakpoints.down("md")]: {
     marginRight: '3%',
   },

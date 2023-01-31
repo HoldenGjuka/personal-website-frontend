@@ -4,7 +4,6 @@ import { ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from './styles/Theme'
-// import Background from './styles/Background.js'
 import { FormatContainer } from './styles/FormatContainer';
 
 import Appbar from './components/Appbar'
@@ -25,10 +24,8 @@ export default function App () {
           <Header />
           <Appbar />
           <Divider />
-          {/* <Background> */}
-            <BlogSpace />
-            <Skills />
-          {/* </Background> */}
+          <BlogSpace />
+          <Skills />
           <Footer />
         </FormatContainer>
     </ThemeProvider>

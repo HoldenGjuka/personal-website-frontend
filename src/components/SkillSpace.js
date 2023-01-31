@@ -14,7 +14,7 @@ export default function Skills() {
           </GreenHighlightSpanBox>
         </SkillsHeader>
         <SkillsBodyContainer>
-          <SkillsBody>Full Stack Dev   </SkillsBody>
+          <SkillsBody>Full Stack</SkillsBody>
           <SkillsBody>React</SkillsBody>
           <SkillsBody>Django</SkillsBody>
           <SkillsBody>GitHub</SkillsBody>

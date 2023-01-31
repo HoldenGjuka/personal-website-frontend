@@ -11,7 +11,7 @@ import Header from './components/Header'
 import BlogSpace from './components/BlogSpace'
 import Divider from './components/Divider';
 import Footer from './components/Footer';
-import Skills from './components/SkillSpace';
+import SkillSpace from './components/SkillSpace';
 
 
 
@@ -20,14 +20,16 @@ export default function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
         <FormatContainer>
           <Header />
           <Appbar />
           <Divider />
           <BlogSpace />
-          <Skills />
+          <SkillSpace />
           <Footer />
         </FormatContainer>
+        
     </ThemeProvider>
   )
 }

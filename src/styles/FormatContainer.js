@@ -8,5 +8,5 @@ export const FormatContainer = styled(Box)(() => ({
   gridTemplateAreas: "'h h' 'a a' 'd d' 'b s' 'f f'",
   gridTemplateRows: 'auto 1fr 40px',
   gridTemplateColumns: '1fr auto',
-  maxHeight: '100vh',
+  height: '100vh',
 }))

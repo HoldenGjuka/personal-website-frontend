@@ -2,7 +2,7 @@ import React from 'react'
 
 import { SkillsContainer, SkillsHeader, SkillsBody,
         SkillsBodyContainer, GreenHighlightSpanBox } 
-        from "../styles/Skills"
+        from "../styles/SkillSpace"
 
 export default function Skills() {
   return (

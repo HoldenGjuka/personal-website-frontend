@@ -4,15 +4,15 @@ import { ThemeProvider } from '@mui/system'
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from './styles/Theme'
-import Background from './styles/Background.js'
-import { BigBadContainer } from './styles/BigBad';
+// import Background from './styles/Background.js'
+import { FormatContainer } from './styles/FormatContainer';
 
 import Appbar from './components/Appbar'
 import Header from './components/Header'
 import BlogSpace from './components/BlogSpace'
 import Divider from './components/Divider';
 import Footer from './components/Footer';
-import Skills from './components/Skills';
+import Skills from './components/SkillSpace';
 
 
 
@@ -21,7 +21,7 @@ export default function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-        <BigBadContainer>
+        <FormatContainer>
           <Header />
           <Appbar />
           <Divider />
@@ -30,7 +30,7 @@ export default function App () {
             <Skills />
           {/* </Background> */}
           <Footer />
-        </BigBadContainer>
+        </FormatContainer>
     </ThemeProvider>
   )
 }

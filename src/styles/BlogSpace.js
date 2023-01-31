@@ -34,7 +34,7 @@ export const BlueHighlightSpanBox = styled(SpanBox, Colors, theme)(() => ({
   background: 'linear-gradient(180deg,rgba(255,255,255,0) 25%, ' + Colors.blue + ' 25%)'
 }))
 
-//Blog Space Header
+//BlogSpace Header
 export const BlogsHeader = styled(Typography)(() => ({
   [theme.breakpoints.down("md")]: {
     fontSize: '2.5em',

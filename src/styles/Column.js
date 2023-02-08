@@ -1,9 +1,9 @@
-import React from 'react'
-
 import { styled } from '@mui/material/styles'
 import { Box } from '@mui/system'
 
-export const ColumnContainer = styled(Box, Typography, theme)(() => ({
+import { Colors } from './Theme.js'
+
+export const ColumnContainer = styled(Box, Colors)(() => ({
   gridArea: 'c',
-  flex: '0 1 auto'
+  backgroundColor: Colors.pink
 }))

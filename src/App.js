@@ -7,6 +7,7 @@ import theme from './styles/Theme'
 import { FormatContainer } from './styles/FormatContainer';
 
 import Appbar from './components/Appbar'
+import Column from './components/Column'
 import Header from './components/Header'
 import BlogSpace from './components/BlogSpace'
 import Divider from './components/Divider';
@@ -25,8 +26,10 @@ export default function App () {
           <Header />
           <Appbar />
           <Divider />
+          <Column />
           <BlogSpace />
           <SkillSpace />
+          <Column />
           <Footer />
         </FormatContainer>
         
